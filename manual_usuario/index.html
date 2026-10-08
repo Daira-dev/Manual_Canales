@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario | CANALES</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="assets/logo-canales.png" alt="Asociación Civil Canales" class="brand-logo">
+            <span class="badge-project">PP4 · Desarrollo de Software</span>
+            <h1>Asociación Civil Canales</h1>
+            <h2>Manual de Usuario</h2>
+
+            <div class="sidebar-actions">
+                <button onclick="window.print()">Descargar PDF</button>
+                <a href="index.html">← Índice</a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#introduccion">1. Introducción y acceso</a></li>
+                <li><a href="#sitio-publico">2. Sitio público</a></li>
+                <li><a href="#recursos">3. Recursos y contenidos</a></li>
+                <li><a href="#donaciones">4. Donaciones y colaboración</a></li>
+                <li><a href="#contacto">5. Contacto</a></li>
+                <li><a href="#acceso-admin">6. Acceso administrativo</a></li>
+                <li><a href="#gestion">7. Gestión de contenidos</a></li>
+                <li><a href="#accesibilidad">8. Accesibilidad e inclusión</a></li>
+                <li><a href="#estado">9. Funcionalidades en desarrollo</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="content">
+
+        <!-- ENCABEZADO -->
+        <header class="header-doc">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+                <div>
+                    <h1>Manual de Usuario</h1>
+                    <p>
+                        Guía de uso de la plataforma web de la Asociación Civil Canales. Este documento
+                        describe las principales funcionalidades disponibles para visitantes y usuarios
+                        del sistema.
+                    </p>
+                </div>
+
+                <button onclick="window.print()" class="btn-print-action" style="background:#ffffff; color:#b44f11; border:none; padding:10px 18px; border-radius:8px; font-size:13.5px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; box-shadow:0 4px 6px rgba(0,0,0,0.15);">
+                    Descargar PDF
+                </button>
+            </div>
+
+            <div class="meta-tags">
+                <span class="meta-tag">CANALES</span>
+                <span class="meta-tag">PP4</span>
+                <span class="meta-tag">Aplicación Web</span>
+                <span class="meta-tag">Documento en desarrollo</span>
+            </div>
+        </header>
+
+        <!-- 1. INTRODUCCIÓN -->
+        <section class="section-card" id="introduccion">
+            <h2>1. Introducción y acceso a la plataforma</h2>
+
+            <p>
+                La plataforma web de la Asociación Civil Canales tiene como objetivo centralizar la información
+                institucional, los proyectos, recursos educativos, contenidos accesibles y medios de colaboración
+                con la organización.
+            </p>
+
+            <p>
+                El sitio está pensado para ser utilizado desde computadoras, tablets y dispositivos móviles,
+                manteniendo una interfaz adaptable a diferentes tamaños de pantalla.
+            </p>
+
+            <div class="callout info">
+                <div>
+                    <strong>Estado de la documentación:</strong>
+                    El proyecto se encuentra actualmente en desarrollo. Por este motivo, algunas de las
+                    funcionalidades descritas en este manual pueden encontrarse en proceso de implementación.
+                </div>
+            </div>
+
+            <h3>1.1 Acceso al sitio</h3>
+
+            <p>
+                El visitante puede acceder al sitio sin necesidad de crear una cuenta. Desde la página principal
+                se encuentran disponibles los accesos a las diferentes secciones institucionales.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Página principal — CANALES</span>
+                </div>
+
+                <img src="capturas/01_inicio.png" alt="Página principal de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 1: Página principal de la plataforma CANALES.</figcaption>
+            </div>
+        </section>
+
+        <!-- 2. SITIO PÚBLICO -->
+        <section class="section-card" id="sitio-publico">
+            <h2>2. Sitio público</h2>
+
+            <p>
+                El sitio público concentra la información institucional de la Asociación Civil Canales y
+                permite a los visitantes consultar sus proyectos, actividades, recursos y formas de colaboración.
+            </p>
+
+            <h3>2.1 Navegación principal</h3>
+
+            <p>
+                La barra de navegación permite acceder a las diferentes secciones disponibles del sitio.
+                La navegación está diseñada para mantenerse clara y consistente en las distintas páginas.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Navegación principal — CANALES</span>
+                </div>
+
+                <img src="capturas/02_navegacion.png" alt="Navegación principal de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 2: Barra de navegación principal del sitio.</figcaption>
+            </div>
+
+            <h3>2.2 Consulta de información institucional</h3>
+
+            <p>
+                Desde las diferentes secciones públicas, el visitante puede consultar información sobre
+                la organización, sus proyectos y las actividades que desarrolla.
+            </p>
+
+            <p>
+                La información se presenta mediante páginas, tarjetas, enlaces y recursos multimedia según
+                corresponda a cada contenido.
+            </p>
+        </section>
+
+        <!-- 3. RECURSOS -->
+        <section class="section-card" id="recursos">
+            <h2>3. Recursos y contenidos</h2>
+
+            <p>
+                La plataforma contempla un espacio destinado a recursos y materiales de interés para la
+                comunidad. Estos contenidos pueden incluir materiales educativos, documentos, imágenes,
+                videos y recursos vinculados a la Lengua de Señas Argentina (LSA).
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Recursos y materiales — CANALES</span>
+                </div>
+
+                <img src="capturas/03_recursos.png" alt="Sección de recursos de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 3: Sección destinada a la consulta de recursos y materiales.</figcaption>
+            </div>
+
+            <h3>3.1 Consulta de un recurso</h3>
+
+            <ol class="step-list">
+                <li>Ingresar a la sección correspondiente desde la navegación principal.</li>
+                <li>Seleccionar el recurso que se desea consultar.</li>
+                <li>Visualizar el contenido o utilizar el enlace disponible para acceder al material.</li>
+                <li>En caso de tratarse de un recurso descargable, utilizar la opción correspondiente.</li>
+            </ol>
+
+            <div class="callout tip">
+                <div>
+                    <strong>Contenido accesible:</strong>
+                    Los recursos destinados a la comunidad contemplan criterios de accesibilidad e inclusión
+                    definidos para el proyecto.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DONACIONES -->
+        <section class="section-card" id="donaciones">
+            <h2>4. Donaciones y colaboración</h2>
+
+            <p>
+                La plataforma contempla un espacio destinado a las personas que desean colaborar con la
+                Asociación Civil Canales mediante donaciones u otras formas de participación.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Donaciones — CANALES</span>
+                </div>
+
+                <img src="capturas/04_donaciones.png" alt="Sección de donaciones de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 4: Sección de colaboración y donaciones.</figcaption>
+            </div>
+
+            <h3>4.1 Proceso general de donación</h3>
+
+            <ol class="step-list">
+                <li>Acceder a la sección de donaciones desde el sitio.</li>
+                <li>Seleccionar la modalidad de colaboración disponible.</li>
+                <li>Completar los datos solicitados por el formulario correspondiente.</li>
+                <li>Continuar con el proceso de pago o confirmación según la modalidad habilitada.</li>
+            </ol>
+
+            <div class="callout warning">
+                <div>
+                    <strong>Funcionalidad en implementación:</strong>
+                    La integración completa con la pasarela de pagos y la gestión administrativa de
+                    donaciones forma parte de las funcionalidades que se encuentran en desarrollo.
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACTO -->
+        <section class="section-card" id="contacto">
+            <h2>5. Formulario de contacto</h2>
+
+            <p>
+                El sitio dispone de un espacio de contacto destinado a facilitar la comunicación entre
+                visitantes y la Asociación Civil Canales.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Contacto — CANALES</span>
+                </div>
+
+                <img src="capturas/05_contacto.png" alt="Formulario de contacto de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 5: Formulario y medios de contacto.</figcaption>
+            </div>
+
+            <h3>5.1 Envío de una consulta</h3>
+
+            <ol class="step-list">
+                <li>Ingresar a la sección de contacto.</li>
+                <li>Completar los datos solicitados.</li>
+                <li>Escribir el motivo o mensaje de la consulta.</li>
+                <li>Revisar la información ingresada.</li>
+                <li>Enviar el formulario.</li>
+            </ol>
+
+            <p>
+                El sistema podrá incorporar posteriormente mecanismos de validación y notificación para
+                facilitar la gestión interna de las consultas.
+            </p>
+        </section>
+
+        <!-- 6. ACCESO ADMINISTRATIVO -->
+        <section class="section-card" id="acceso-admin">
+            <h2>6. Acceso administrativo</h2>
+
+            <p>
+                La plataforma contempla un área privada destinada a la gestión de contenidos y funcionalidades
+                administrativas del sistema.
+            </p>
+
+            <h3>6.1 Inicio de sesión</h3>
+
+            <p>
+                Los usuarios autorizados acceden al sistema mediante una pantalla de autenticación.
+                Las opciones disponibles posteriormente dependen del rol asignado.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Inicio de sesión — CANALES</span>
+                </div>
+
+                <img src="capturas/06_login.png" alt="Pantalla de inicio de sesión" onclick="openModal(this)">
+
+                <figcaption>Figura 6: Pantalla de acceso al área privada.</figcaption>
+            </div>
+
+            <div class="callout info">
+                <div>
+                    <strong>Acceso restringido:</strong>
+                    El área administrativa no forma parte del contenido público del sitio y requiere
+                    credenciales válidas.
+                </div>
+            </div>
+
+            <h3>6.2 Roles contemplados</h3>
+
+            <table class="doc-table">
+                <thead>
+                    <tr>
+                        <th>Rol</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Administrador</strong></td>
+                        <td>Gestión general del contenido, usuarios, recursos y funcionalidades administrativas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Socio</strong></td>
+                        <td>Acceso limitado a determinadas secciones o materiales asignados, según los permisos definidos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Visitante</strong></td>
+                        <td>Acceso al contenido público del sitio sin necesidad de autenticación.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 7. GESTIÓN -->
+        <section class="section-card" id="gestion">
+            <h2>7. Gestión de contenidos</h2>
+
+            <p>
+                Una de las funciones principales del sistema consiste en permitir la administración de
+                contenidos institucionales desde un área privada.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Panel administrativo — CANALES</span>
+                </div>
+
+                <img src="capturas/07_panel_admin.png" alt="Panel administrativo de CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 7: Vista del área administrativa de la plataforma.</figcaption>
+            </div>
+
+            <h3>7.1 Contenidos administrables</h3>
+
+            <p>
+                De acuerdo con los requerimientos definidos para el proyecto, se contempla la gestión de
+                diferentes tipos de información:
+            </p>
+
+            <table class="doc-table">
+                <thead>
+                    <tr>
+                        <th>Contenido</th>
+                        <th>Operaciones previstas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Noticias</td>
+                        <td>Alta, consulta, modificación y baja.</td>
+                    </tr>
+                    <tr>
+                        <td>Proyectos</td>
+                        <td>Alta, consulta, modificación y baja.</td>
+                    </tr>
+                    <tr>
+                        <td>Materiales</td>
+                        <td>Administración de recursos y contenidos.</td>
+                    </tr>
+                    <tr>
+                        <td>Imágenes y videos</td>
+                        <td>Gestión de recursos multimedia.</td>
+                    </tr>
+                    <tr>
+                        <td>Documentación</td>
+                        <td>Gestión de archivos y materiales internos.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="callout warning">
+                <div>
+                    <strong>Estado actual:</strong>
+                    Los módulos de administración y CRUD se encuentran actualmente en implementación.
+                    La interfaz y la estructura pueden continuar modificándose durante el desarrollo.
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. ACCESIBILIDAD -->
+        <section class="section-card" id="accesibilidad">
+            <h2>8. Accesibilidad e inclusión</h2>
+
+            <p>
+                La accesibilidad constituye uno de los objetivos principales del proyecto. La plataforma se
+                desarrolla considerando criterios orientados a facilitar el acceso a la información por parte
+                de diferentes usuarios.
+            </p>
+
+            <div class="figure-container">
+                <div class="window-top">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="title-bar">Accesibilidad e inclusión — CANALES</span>
+                </div>
+
+                <img src="capturas/09_accesibilidad.png" alt="Elementos de accesibilidad del sitio CANALES" onclick="openModal(this)">
+
+                <figcaption>Figura 8: Elementos relacionados con accesibilidad e inclusión.</figcaption>
+            </div>
+
+            <h3>8.1 Principales criterios considerados</h3>
+
+            <ul>
+                <li>Diseño adaptable a dispositivos móviles.</li>
+                <li>Contraste adecuado entre texto y fondo.</li>
+                <li>Estructura visual clara y consistente.</li>
+                <li>Uso de textos alternativos para imágenes cuando corresponde.</li>
+                <li>Contenidos y recursos relacionados con la Lengua de Señas Argentina (LSA).</li>
+                <li>Navegación pensada para facilitar la comprensión y localización de contenidos.</li>
+            </ul>
+
+            <div class="callout tip">
+                <div>
+                    <strong>Objetivo de accesibilidad:</strong>
+                    El proyecto toma como referencia los criterios de accesibilidad establecidos
+                    en WCAG 2.1 nivel AA.
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. ESTADO -->
+        <section class="section-card" id="estado">
+            <h2>9. Funcionalidades en desarrollo</h2>
+
+            <p>
+                Debido a que la plataforma se encuentra actualmente en desarrollo, algunas funcionalidades
+                previstas todavía no están disponibles para su utilización definitiva.
+            </p>
+
+            <table class="doc-table">
+                <thead>
+                    <tr>
+                        <th>Funcionalidad</th>
+                        <th>Estado</th>
+                        <th>Observación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sitio institucional</td>
+                        <td><span class="status available">Disponible</span></td>
+                        <td>Interfaz pública en desarrollo/finalización.</td>
+                    </tr>
+                    <tr>
+                        <td>Recursos y materiales</td>
+                        <td><span class="status available">Parcial</span></td>
+                        <td>La estructura visual se encuentra disponible; la gestión completa continúa en desarrollo.</td>
+                    </tr>
+                    <tr>
+                        <td>Autenticación</td>
+                        <td><span class="status development">En desarrollo</span></td>
+                        <td>Forma parte del área privada del sistema.</td>
+                    </tr>
+                    <tr>
+                        <td>CRUD de contenidos</td>
+                        <td><span class="status development">En desarrollo</span></td>
+                        <td>Implementación iniciada.</td>
+                    </tr>
+                    <tr>
+                        <td>Donaciones</td>
+                        <td><span class="status development">En desarrollo</span></td>
+                        <td>La integración con la gestión de donaciones continúa en implementación.</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de usuarios y roles</td>
+                        <td><span class="status development">En desarrollo</span></td>
+                        <td>Se implementará de acuerdo con los permisos definidos para el sistema.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="callout info">
+                <div>
+                    <strong>Actualización del manual:</strong>
+                    Este documento será actualizado a medida que se incorporen y validen nuevas
+                    funcionalidades del sistema.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="imgModal" onclick="closeModal()">
+        <img id="modalImg" src="" alt="Captura ampliada">
+    </div>
+
+    <script>
+        function openModal(imgElement) {
+            const modal = document.getElementById("imgModal");
+            const modalImg = document.getElementById("modalImg");
+            modalImg.src = imgElement.src;
+            modalImg.alt = imgElement.alt;
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("imgModal").style.display = "none";
+        }
+
+        const sections = document.querySelectorAll("section.section-card");
+        const navLinks = document.querySelectorAll("aside.sidebar nav a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

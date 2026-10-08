@@ -3,516 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Documentación del Proyecto | Canales A.C.</title>
-
-  <style>
-    :root {
-      --color-primary: #d35f18;
-      --color-primary-dark: #c95612;
-      --color-primary-darker: #b44f11;
-
-      --color-background: #fdf7f0;
-      --color-background-soft: #f7f3ed;
-      --color-header: #f6d8b6;
-      --color-header-soft: #f9eddc;
-
-      --color-white: #ffffff;
-
-      --color-text: #1f2937;
-      --color-text-muted: #6b7280;
-
-      --color-primary-soft: #fff6ed;
-      --color-primary-border: #ffd7b2;
-      --color-primary-light: #ffd8b4;
-
-      --color-border: rgba(0, 0, 0, 0.06);
-      --color-border-soft: rgba(0, 0, 0, 0.04);
-
-      --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.08);
-      --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.06);
-
-      --radius-small: 10px;
-      --radius-medium: 12px;
-      --radius-card: 16px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--color-text);
-      background:
-        linear-gradient(
-          180deg,
-          var(--color-background) 0%,
-          var(--color-background-soft) 100%
-        );
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .site-header {
-      background: var(--color-white);
-      border-bottom: 1px solid var(--color-border);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-    }
-
-    .header-inner {
-      width: min(1180px, calc(100% - 40px));
-      min-height: 76px;
-      margin: 0 auto;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-    }
-
-    .brand-logo {
-      width: auto;
-      height: 58px;
-      object-fit: contain;
-      display: block;
-    }
-
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-
-      color: var(--color-text-muted);
-      font-size: 0.92rem;
-      font-weight: 600;
-
-      transition: color 0.2s ease;
-    }
-
-    .back-link:hover {
-      color: var(--color-primary);
-    }
-
-    main {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 64px 0 80px;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-
-      padding: 48px;
-      margin-bottom: 42px;
-
-      border: 1px solid var(--color-primary-border);
-      border-radius: var(--radius-card);
-
-      background:
-        radial-gradient(
-          circle at 90% 15%,
-          rgba(211, 95, 24, 0.10),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #f8eee3 0%,
-          #f5e7d8 100%
-        );
-
-      box-shadow: var(--shadow-soft);
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 12px;
-
-      color: var(--color-primary);
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      max-width: 760px;
-      margin-bottom: 14px;
-
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-      color: var(--color-text);
-    }
-
-    .hero p {
-      max-width: 760px;
-      color: #5f6368;
-      font-size: 1.05rem;
-    }
-
-    .section-header {
-      margin-bottom: 20px;
-    }
-
-    .section-header h2 {
-      margin-bottom: 5px;
-      font-size: 1.55rem;
-    }
-
-    .section-header p {
-      color: var(--color-text-muted);
-      font-size: 0.95rem;
-    }
-
-    .documents {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .document-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 220px;
-
-      padding: 28px;
-
-      background: var(--color-white);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-card);
-
-      box-shadow: var(--shadow-card);
-
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
-    }
-
-    .document-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--color-primary-border);
-      box-shadow: 0 16px 34px rgba(15, 23, 42, 0.10);
-    }
-
-    .document-icon {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 12px;
-      background: var(--color-primary-soft);
-      border: 1px solid var(--color-primary-border);
-
-      color: var(--color-primary);
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    .document-card h3 {
-      margin-bottom: 8px;
-      font-size: 1.2rem;
-    }
-
-    .document-card p {
-      margin-bottom: 20px;
-      color: var(--color-text-muted);
-      font-size: 0.94rem;
-    }
-
-    .document-meta {
-      margin-top: auto;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-
-      padding-top: 16px;
-      border-top: 1px solid var(--color-border-soft);
-    }
-
-    .document-date {
-      color: var(--color-text-muted);
-      font-size: 0.82rem;
-    }
-
-    .document-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-
-      color: var(--color-primary);
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .document-link:hover {
-      color: var(--color-primary-darker);
-    }
-
-    .subsection {
-      margin-top: 46px;
-    }
-
-    .meeting-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .meeting-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-
-      padding: 22px 24px;
-
-      background: var(--color-white);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-
-      box-shadow: var(--shadow-soft);
-
-      transition:
-        border-color 0.2s ease,
-        transform 0.2s ease;
-    }
-
-    .meeting-item:hover {
-      transform: translateY(-2px);
-      border-color: var(--color-primary-border);
-    }
-
-    .meeting-info {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .meeting-icon {
-      width: 42px;
-      height: 42px;
-      flex-shrink: 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 10px;
-      background: var(--color-primary-soft);
-      color: var(--color-primary);
-      font-weight: 700;
-    }
-
-    .meeting-info h3 {
-      margin-bottom: 2px;
-      font-size: 1rem;
-    }
-
-    .meeting-info p {
-      color: var(--color-text-muted);
-      font-size: 0.86rem;
-    }
-
-    .pdf-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-
-      padding: 9px 14px;
-
-      border-radius: 9px;
-      background: var(--color-primary);
-      color: white;
-
-      font-size: 0.84rem;
-      font-weight: 700;
-
-      transition: background 0.2s ease;
-    }
-
-    .pdf-link:hover {
-      background: var(--color-primary-dark);
-    }
-
-    .info-box {
-      margin-top: 42px;
-      padding: 24px 26px;
-
-      border: 1px solid var(--color-primary-border);
-      border-radius: var(--radius-medium);
-
-      background: var(--color-primary-soft);
-    }
-
-    .info-box strong {
-      display: block;
-      margin-bottom: 5px;
-      color: var(--color-primary-darker);
-    }
-
-    .info-box p {
-      color: #6b4b35;
-      font-size: 0.92rem;
-    }
-
-    footer {
-      border-top: 1px solid var(--color-border);
-      background: var(--color-white);
-    }
-
-    .footer-inner {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 24px 0;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-
-      color: var(--color-text-muted);
-      font-size: 0.84rem;
-    }
-
-    @media (max-width: 760px) {
-      .header-inner {
-        min-height: 68px;
-      }
-
-      .brand-logo {
-        height: 50px;
-      }
-
-      main {
-        padding: 40px 0 60px;
-      }
-
-      .hero {
-        padding: 32px 24px;
-      }
-
-      .documents {
-        grid-template-columns: 1fr;
-      }
-
-      .meeting-item {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .pdf-link {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-
-    @media print {
-      .site-header {
-        box-shadow: none;
-      }
-
-      .back-link,
-      .pdf-link {
-        display: none;
-      }
-
-      body {
-        background: white;
-      }
-
-      .hero,
-      .document-card,
-      .meeting-item,
-      .info-box {
-        box-shadow: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
   <header class="site-header">
     <div class="header-inner">
-
       <a href="../index.html" class="brand">
-        <img
-          src="../assets/logo-canales.png"
-          alt="Asociación Civil Canales"
-          class="brand-logo"
-        >
+        <img src="../assets/logo-canales.png" alt="Asociación Civil Canales" class="brand-logo">
       </a>
-
-      <a href="../index.html" class="back-link">
-        ← Centro de documentación
-      </a>
-
+      <a href="../index.html" class="back-link">← Centro de documentación</a>
     </div>
   </header>
 
   <main>
 
     <section class="hero">
-
       <span class="eyebrow">Asociación Civil Canales · PP4</span>
-
       <h1>Documentación del proyecto</h1>
-
       <p>
         Espacio destinado a reunir la documentación generada durante las
         diferentes etapas de relevamiento, análisis y desarrollo de la
         plataforma web de la Asociación Civil Canales.
       </p>
-
     </section>
 
-
     <section>
-
       <div class="section-header">
-
         <h2>Documentos principales</h2>
-
         <p>
           Documentación utilizada como base para definir y validar el alcance
           de la solución.
         </p>
-
       </div>
-
 
       <div class="documents">
 
         <article class="document-card">
-
-          <div class="document-icon">
-            ERS
-          </div>
+          <div class="document-icon">ERS</div>
 
           <h3>Especificación de Requisitos de Software</h3>
 
@@ -523,29 +53,18 @@
           </p>
 
           <div class="document-meta">
-
             <span class="document-date">
               Versión 2.0 · 2 de septiembre de 2026
             </span>
 
-            <a
-              href="Especificacion_Requisitos.pdf"
-              class="document-link"
-              target="_blank"
-            >
+            <a href="Especificacion_Requisitos.pdf" class="document-link" target="_blank">
               Ver PDF →
             </a>
-
           </div>
-
         </article>
 
-
         <article class="document-card">
-
-          <div class="document-icon">
-            DOC
-          </div>
+          <div class="document-icon">DOC</div>
 
           <h3>Documentación de reuniones</h3>
 
@@ -556,127 +75,92 @@
           </p>
 
           <div class="document-meta">
-
             <span class="document-date">
-              Agosto — Septiembre 2026
+              Agosto — Octubre 2026
             </span>
 
-            <a
-              href="#minutas"
-              class="document-link"
-            >
+            <a href="#minutas" class="document-link">
               Ver minutas →
             </a>
-
           </div>
-
         </article>
 
       </div>
-
     </section>
-
 
     <section class="subsection" id="minutas">
 
       <div class="section-header">
-
         <h2>Minutas de reuniones</h2>
-
         <p>
           Registro de los principales temas tratados, necesidades
           identificadas y acuerdos establecidos con el cliente.
         </p>
-
       </div>
-
 
       <div class="meeting-list">
 
-
         <article class="meeting-item">
-
           <div class="meeting-info">
-
-            <div class="meeting-icon">
-              01
-            </div>
+            <div class="meeting-icon">01</div>
 
             <div>
-
               <h3>Primer encuentro con el cliente</h3>
-
-              <p>
-                26 de agosto de 2026 · Relevamiento inicial
-              </p>
-
+              <p>26 de agosto de 2026 · Relevamiento inicial</p>
             </div>
-
           </div>
 
-          <a
-            href="minutas/MinutaReunion_26-08-26.pdf"
-            class="pdf-link"
-            target="_blank"
-          >
+          <a href="minutas/MinutaReunion_26-08-26.pdf" class="pdf-link" target="_blank">
             Abrir PDF
           </a>
-
         </article>
-
 
         <article class="meeting-item">
-
           <div class="meeting-info">
-
-            <div class="meeting-icon">
-              02
-            </div>
+            <div class="meeting-icon">02</div>
 
             <div>
-
               <h3>Validación de la especificación de requisitos</h3>
-
-              <p>
-                9 de septiembre de 2026 · Validación de la ERS
-              </p>
-
+              <p>9 de septiembre de 2026 · Validación de la ERS</p>
             </div>
-
           </div>
 
-          <a
-            href="minutas/MinutaReunion_09-09-26.pdf"
-            class="pdf-link"
-            target="_blank"
-          >
+          <a href="minutas/MinutaReunion_09-09-26.pdf" class="pdf-link" target="_blank">
             Abrir PDF
           </a>
-
         </article>
 
+        <article class="meeting-item">
+          <div class="meeting-info">
+            <div class="meeting-icon">03</div>
+
+            <div>
+              <h3>Seguimiento y definición de nuevas funcionalidades</h3>
+              <p>7 de octubre de 2026 · Seguimiento y nuevas definiciones</p>
+            </div>
+          </div>
+
+          <a href="minutas/MinutaReunion_07-10-26.pdf" class="pdf-link" target="_blank">
+            Abrir PDF
+          </a>
+        </article>
 
       </div>
 
     </section>
 
-
     <section class="subsection">
 
       <div class="section-header">
-
         <h2>Otros documentos</h2>
 
         <p>
           Espacio reservado para documentación complementaria que se
           incorpore durante el desarrollo del proyecto.
         </p>
-
       </div>
 
-
       <div class="info-box">
-
         <strong>Documentación en progreso</strong>
 
         <p>
@@ -684,28 +168,17 @@
           relevamientos, actas, especificaciones o material complementario
           generado durante las siguientes etapas del proyecto.
         </p>
-
       </div>
 
     </section>
 
   </main>
 
-
   <footer>
-
     <div class="footer-inner">
-
-      <span>
-        Asociación Civil Canales · Proyecto PP4
-      </span>
-
-      <span>
-        Documentación del proyecto · 2026
-      </span>
-
+      <span>Asociación Civil Canales · Proyecto PP4</span>
+      <span>Documentación del proyecto · 2026</span>
     </div>
-
   </footer>
 
 </body>

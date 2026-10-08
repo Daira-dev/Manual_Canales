@@ -3,429 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Documentación | Canales </title>
-
-    <style>
-        :root {
-            --color-primary: #d35f18;
-            --color-primary-dark: #c95612;
-            --color-background: #fdf7f0;
-            --color-background-soft: #f7f3ed;
-            --color-white: #ffffff;
-            --color-text: #1f2937;
-            --color-text-muted: #6b7280;
-            --color-primary-soft: #fff6ed;
-            --color-primary-border: #ffd7b2;
-            --color-border: rgba(0, 0, 0, 0.06);
-
-            --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.08);
-            --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.06);
-
-            --radius-card: 16px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                "Helvetica Neue",
-                Arial,
-                sans-serif;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    var(--color-background) 0%,
-                    var(--color-background-soft) 100%
-                );
-
-            color: var(--color-text);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .brand-logo {
-            display: block;
-            width: auto;
-            height: 58px;
-            object-fit: contain;
-        }
-
-        /* Contenedor principal */
-        .container {
-            width: 100%;
-            max-width: 1180px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header */
-        .docs-header {
-            background: var(--color-white);
-            border-bottom: 1px solid var(--color-border);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-        }
-
-        .header-inner {
-            min-height: 76px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            gap: 24px;
-        }
-
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-
-            color: var(--color-text);
-            text-decoration: none;
-        }
-
-        .brand-mark {
-            width: 44px;
-            height: 44px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 12px;
-
-            background: var(--color-primary);
-            color: var(--color-white);
-
-            font-size: 21px;
-            font-weight: 800;
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-
-            line-height: 1.15;
-        }
-
-        .brand-name {
-            font-size: 18px;
-            font-weight: 800;
-        }
-
-        .brand-subtitle {
-            margin-top: 3px;
-
-            color: var(--color-text-muted);
-            font-size: 11px;
-        }
-
-        .back-link {
-            color: var(--color-primary);
-
-            font-size: 14px;
-            font-weight: 700;
-
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            color: var(--color-primary-dark);
-            text-decoration: underline;
-        }
-
-        /* Contenido */
-        main {
-            padding: 64px 0 48px;
-        }
-
-        /* Encabezado */
-        .hero {
-            max-width: 820px;
-
-            margin: 0 auto 52px;
-
-            text-align: center;
-        }
-
-        .eyebrow {
-            display: inline-block;
-
-            margin-bottom: 18px;
-            padding: 7px 13px;
-
-            background: var(--color-primary-soft);
-            border: 1px solid var(--color-primary-border);
-
-            border-radius: 999px;
-
-            color: var(--color-primary);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .hero h1 {
-            margin-bottom: 16px;
-
-            color: var(--color-text);
-
-            font-size: clamp(32px, 5vw, 48px);
-            line-height: 1.12;
-
-            letter-spacing: -0.03em;
-        }
-
-        .hero p {
-            max-width: 680px;
-            margin: 0 auto;
-
-            color: var(--color-text-muted);
-
-            font-size: 17px;
-        }
-
-        /* Título de sección */
-        .section-title {
-            margin-bottom: 16px;
-
-            color: var(--color-primary);
-
-            font-size: 13px;
-            font-weight: 800;
-
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        /* Tarjetas */
-        .manual-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
-
-            gap: 22px;
-        }
-
-        .manual-card {
-            min-height: 250px;
-
-            display: flex;
-            flex-direction: column;
-
-            padding: 28px;
-
-            background: var(--color-white);
-
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-card);
-
-            box-shadow: var(--shadow-soft);
-
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .manual-card:hover {
-            transform: translateY(-4px);
-
-            border-color: var(--color-primary-border);
-
-            box-shadow: var(--shadow-card);
-        }
-
-        .card-icon {
-            width: 44px;
-            height: 44px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 20px;
-
-            background: var(--color-primary-soft);
-
-            border-radius: 12px;
-
-            color: var(--color-primary);
-
-            font-size: 14px;
-            font-weight: 800;
-        }
-
-        .card-tag {
-            margin-bottom: 7px;
-
-            color: var(--color-primary);
-
-            font-size: 11px;
-            font-weight: 800;
-
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-        }
-
-        .manual-card h2 {
-            margin-bottom: 10px;
-
-            font-size: 22px;
-            line-height: 1.25;
-        }
-
-        .manual-card p {
-            flex: 1;
-
-            margin-bottom: 24px;
-
-            color: var(--color-text-muted);
-
-            font-size: 14px;
-        }
-
-        .btn {
-            width: 100%;
-
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 11px 16px;
-
-            background: var(--color-primary);
-            color: var(--color-white);
-
-            border-radius: 10px;
-
-            text-decoration: none;
-
-            font-size: 14px;
-            font-weight: 700;
-
-            transition: background 0.15s ease;
-        }
-
-        .btn:hover {
-            background: var(--color-primary-dark);
-        }
-
-        /* Estado del proyecto */
-        .status-box {
-            margin-top: 34px;
-            padding: 26px 28px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--color-primary-soft),
-                    var(--color-white)
-                );
-
-            border: 1px solid var(--color-primary-border);
-            border-radius: var(--radius-card);
-        }
-
-        .status-box h2 {
-            margin-bottom: 14px;
-
-            font-size: 20px;
-        }
-
-        .status-list {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
-
-            gap: 10px 28px;
-
-            list-style: none;
-        }
-
-        .status-list li {
-            color: var(--color-text-muted);
-
-            font-size: 14px;
-        }
-
-        .status-available {
-            color: #1b9b8a;
-            font-weight: 700;
-        }
-
-        .status-progress {
-            color: var(--color-primary);
-            font-weight: 700;
-        }
-
-        /* Footer */
-        footer {
-            padding: 24px;
-
-            background: var(--color-white);
-
-            border-top: 1px solid var(--color-border);
-
-            color: var(--color-text-muted);
-
-            text-align: center;
-
-            font-size: 12px;
-        }
-
-        /* Responsive */
-        @media (max-width: 720px) {
-
-            .container {
-                padding: 0 16px;
-            }
-
-            .header-inner {
-                min-height: 68px;
-            }
-
-            .brand-subtitle {
-                display: none;
-            }
-
-            .back-link {
-                font-size: 12px;
-            }
-
-            main {
-                padding: 44px 0 36px;
-            }
-
-            .manual-grid,
-            .status-list {
-                grid-template-columns: 1fr;
-            }
-
-            .manual-card {
-                padding: 24px;
-            }
-        }
-    </style>
+    <title>Documentación | Canales</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -433,199 +12,95 @@
     <!-- Header -->
     <header class="docs-header">
         <div class="container header-inner">
-
-            <a href="index.html" class="brand">
-                <img src="assets/logo-canales.png" alt="Asociación Civil Canales" class="brand-logo">
-            </a>
-
-            <a class="back-link">
-                Sitio web ↗
-            </a>
+            <a href="index.html" class="brand"><img src="assets/logo-canales.png" alt="Asociación Civil Canales" class="brand-logo"></a>
+            <a class="back-link">Sitio web ↗</a>
         </div>
     </header>
 
-
     <!-- Contenido principal -->
     <main>
-
         <div class="container">
 
             <!-- Presentación -->
             <section class="hero">
-
-                <span>
-                    Asociación Civil Canales
-                </span>
-
-                <h1>
-                    Documentación
-                </h1>
-
+                <span>Asociación Civil Canales</span>
+                <h1>Documentación</h1>
                 <p>
                     Manuales, documentación y material de referencia del proyecto CANALES.
                     Este espacio acompaña el desarrollo del sistema
                     y se actualiza a medida que se incorporan nuevas funcionalidades.
                 </p>
-
             </section>
 
             <!-- Documentación de uso y desarrollo -->
             <section>
-
                 <div class="manual-grid">
 
                     <!-- Manual de Usuario -->
                     <article class="manual-card">
-
-                        <div class="card-icon">
-                            01
-                        </div>
-
-                        <div class="card-tag">
-                            Uso del sistema
-                        </div>
-
-                        <h2>
-                            Manual de Usuario
-                        </h2>
-
+                        <div class="card-icon">01</div>
+                        <div class="card-tag">Uso del sistema</div>
+                        <h2>Manual de Usuario</h2>
                         <p>
                             Guía destinada a las personas que utilizan
                             el sitio CANALES. Incluye instrucciones,
                             recorridos y capturas de las funcionalidades
                             disponibles en la plataforma.
                         </p>
-
-                        <a href="manual_usuario.html" class="btn">
-                            Ver manual →
-                        </a>
-
+                        <a href="manual_usuario.html" class="btn">Ver manual →</a>
                     </article>
-
 
                     <!-- Manual Técnico -->
                     <article class="manual-card">
-
-                        <div class="card-icon">
-                            02
-                        </div>
-
-                        <div class="card-tag">
-                            Desarrollo
-                        </div>
-
-                        <h2>
-                            Manual Técnico
-                        </h2>
-
+                        <div class="card-icon">02</div>
+                        <div class="card-tag">Desarrollo</div>
+                        <h2>Manual Técnico</h2>
                         <p>
                             Documentación sobre la arquitectura,
                             tecnologías, estructura del proyecto,
                             frontend, backend, base de datos
                             e integración entre componentes.
                         </p>
-
-                        <a href="manual_tecnico.html" class="btn">
-                            Ver manual →
-                        </a>
-
+                        <a href="manual_tecnico.html" class="btn">Ver manual →</a>
                     </article>
-
 
                     <!-- Documentación del Proyecto -->
                     <article class="manual-card">
-
-                        <div class="card-icon">
-                            03
-                        </div>
-
-                        <div class="card-tag">
-                            Proyecto
-                        </div>
-
-                        <h2>
-                            Documentación
-                        </h2>
-
+                        <div class="card-icon">03</div>
+                        <div class="card-tag">Proyecto</div>
+                        <h2>Documentación</h2>
                         <p>
                             Documentación generada durante el desarrollo
                             del proyecto, incluyendo requerimientos,
                             minutas de reuniones, relevamiento y
                             otros documentos de referencia.
                         </p>
-
-                        <a href="documentacion/index.html" class="btn">
-                            Ver documentación →
-                        </a>
-
+                        <a href="documentacion/index.html" class="btn">Ver documentación →</a>
                     </article>
 
                 </div>
-
             </section>
 
             <!-- Estado actual -->
             <section class="status-box">
-
-                <h2>
-                    Estado actual del proyecto
-                </h2>
-
+                <h2>Estado actual del proyecto</h2>
                 <ul class="status-list">
-
-                    <li>
-                        <span class="status-available">✓</span>
-                        Interfaz institucional desarrollada
-                    </li>
-
-                    <li>
-                        <span class="status-available">✓</span>
-                        Navegación principal implementada
-                    </li>
-
-                    <li>
-                        <span class="status-available">✓</span>
-                        Diseño responsive
-                    </li>
-
-                    <li>
-                        <span class="status-available">✓</span>
-                        Secciones principales de contenido
-                    </li>
-
-                    <li>
-                        <span class="status-progress">→</span>
-                        Implementación de CRUDs
-                    </li>
-
-                    <li>
-                        <span class="status-progress">→</span>
-                        Desarrollo del panel de gestión
-                    </li>
-
-                    <li>
-                        <span class="status-progress">→</span>
-                        Documentación técnica
-                    </li>
-
-                    <li>
-                        <span class="status-progress">→</span>
-                        Elaboración del manual de usuario
-                    </li>
-
+                    <li><span class="status-available">✓</span> Interfaz institucional desarrollada</li>
+                    <li><span class="status-available">✓</span> Navegación principal implementada</li>
+                    <li><span class="status-available">✓</span> Diseño responsive</li>
+                    <li><span class="status-available">✓</span> Secciones principales de contenido</li>
+                    <li><span class="status-progress">→</span> Implementación de CRUDs</li>
+                    <li><span class="status-progress">→</span> Desarrollo del panel de gestión</li>
+                    <li><span class="status-progress">→</span> Documentación técnica</li>
+                    <li><span class="status-progress">→</span> Elaboración del manual de usuario</li>
                 </ul>
-
             </section>
 
         </div>
-
     </main>
 
-
     <!-- Footer -->
-    <footer>
-        Asociación Civil Canales · Proyecto PP4 · Documentación
-    </footer>
+    <footer>Asociación Civil Canales · Proyecto PP4 · Documentación</footer>
 
 </body>
 </html>

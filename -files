@@ -1,0 +1,9 @@
+warning: in the working copy of 'documentacion/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+ assets/fondo-banner.png  |  Bin [31m144509[m -> [32m0[m bytes
+ documentacion.html       | 2294 [31m----------------------------------------------[m
+ documentacion/index.html |  585 [32m+[m[31m-----------[m
+ index.html               |  581 [32m+[m[31m-----------[m
+ manual_tecnico.html      |  375 [31m--------[m
+ manual_usuario.html      | 1390 [31m----------------------------[m
+ 6 files changed, 57 insertions(+), 5168 deletions(-)

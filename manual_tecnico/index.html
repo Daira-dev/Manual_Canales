@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Técnico — CANALESW</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-canales.png" alt="Asociación Civil Canales" class="brand-logo">
+      </a>
+
+      <a href="index.html" class="back-link">
+        ← Centro de documentación
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <span class="eyebrow">Asociación Civil Canales · PP4</span>
+      <h1>Manual Técnico</h1>
+
+      <p>
+        Documentación técnica resumida de la plataforma web CANALESW,
+        desarrollada para la Asociación Civil Canales. Este documento
+        refleja el estado actual del proyecto y podrá ampliarse durante
+        las siguientes etapas de desarrollo.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>1. Objetivo</h2>
+
+      <p>
+        El proyecto tiene como objetivo desarrollar una nueva plataforma
+        web para la Asociación Civil Canales, centralizando la información
+        institucional y proporcionando herramientas para la gestión de
+        contenidos y usuarios.
+      </p>
+
+      <p>
+        La plataforma contempla además criterios de accesibilidad e
+        inclusión, especialmente relacionados con la comunidad sorda y
+        el uso de Lengua de Señas Argentina (LSA).
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>2. Tecnologías</h2>
+
+      <ul class="technology-list">
+        <li>React</li>
+        <li>Laravel</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Base de datos</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>3. Arquitectura general</h2>
+
+      <p>
+        El sistema se organiza mediante una arquitectura cliente-servidor,
+        separando la interfaz de usuario de la lógica del servidor y la
+        persistencia de datos.
+      </p>
+
+      <div class="architecture">
+        Usuario<br>
+        ↓<br>
+        Frontend — React<br>
+        ↓<br>
+        API / HTTP<br>
+        ↓<br>
+        Backend — Laravel<br>
+        ↓<br>
+        Base de datos
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>4. Frontend</h2>
+
+      <p>
+        El frontend contiene la interfaz visual de la plataforma y permite
+        al usuario navegar por las diferentes secciones del sitio.
+      </p>
+
+      <p>
+        Actualmente se encuentra en desarrollo y comprende principalmente
+        la presentación institucional, navegación, autenticación,
+        publicaciones y las diferentes interfaces correspondientes a los
+        módulos de gestión.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>5. Backend</h2>
+
+      <p>
+        El backend se desarrolla utilizando Laravel y concentra la lógica
+        del sistema, el procesamiento de solicitudes y la comunicación con
+        la base de datos.
+      </p>
+
+      <p>
+        Durante la etapa actual se trabaja en la implementación y ajuste
+        de los diferentes CRUD y módulos de gestión definidos en la
+        especificación de requisitos.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>6. Base de datos</h2>
+
+      <p>
+        La base de datos almacena la información necesaria para el
+        funcionamiento de la plataforma, incluyendo usuarios,
+        publicaciones y los módulos de gestión definidos para el sistema.
+      </p>
+
+      <p>
+        El modelo de datos se encuentra en proceso de implementación y
+        podrá actualizarse a medida que avance el desarrollo de los
+        diferentes módulos.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>7. Control de versiones</h2>
+
+      <p>
+        El desarrollo utiliza Git para el control de versiones y GitHub
+        como repositorio remoto.
+      </p>
+
+      <p>
+        El uso de ramas permite trabajar de manera independiente sobre
+        diferentes funcionalidades y posteriormente integrar los cambios
+        al proyecto principal.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>8. Estado actual</h2>
+
+      <p>
+        <span class="status development">Proyecto en desarrollo</span>
+      </p>
+
+      <ul>
+        <li>Interfaz institucional: en desarrollo.</li>
+        <li>Autenticación: implementada.</li>
+        <li>Publicaciones: implementación inicial realizada y en modificación.</li>
+        <li>Gestión de cuentas: implementación inicial realizada y en modificación.</li>
+        <li>CRUD y módulos de gestión: en implementación.</li>
+        <li>Roles Administrador, Docente, Estudiante y Visitante: en desarrollo.</li>
+        <li>Perfil general: implementado.</li>
+        <li>Perfiles y funcionalidades específicas de Docente y Estudiante: pendientes.</li>
+        <li>Capacitaciones, materiales y donaciones: pendientes de implementación.</li>
+        <li>Accesibilidad y funcionalidades LSA: en desarrollo.</li>
+        <li>Sistema de membresías: no se contempla su implementación.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Asociación Civil Canales · CANALESW · Manual Técnico
+  </footer>
+
+</body>
+</html>
