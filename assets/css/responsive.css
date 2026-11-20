@@ -1,0 +1,259 @@
+/* ———  TABLETS Y PANTALLAS MEDIANAS  ———  */
+
+@media (max-width: 992px) {
+
+  .docs-navbar {
+    gap: 20px;
+  }
+
+  .docs-nav {
+    gap: 20px;
+  }
+
+  .docs-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .docs-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .docs-intro-inner,
+  .docs-orientation-inner {
+    gap: 40px;
+  }
+
+  .docs-orientation-inner {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+
+/* ———  TABLETS PEQUEÑAS  ———  */
+
+@media (max-width: 768px) {
+
+  .docs-container {
+    width: calc(100% - 40px);
+  }
+
+  .docs-navbar {
+    min-height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 14px;
+  }
+
+  .docs-brand img {
+    width: 125px;
+  }
+
+  .docs-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .docs-nav-link {
+    min-height: 48px;
+  }
+
+  /* Hero */
+
+  .docs-hero {
+    padding: 50px 0;
+  }
+
+  .docs-hero-content {
+    min-height: auto;
+    justify-content: center;
+  }
+
+  .docs-hero-art {
+    display: none;
+  }
+
+  .docs-hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .docs-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Secciones */
+
+  .docs-intro-inner,
+  .docs-orientation-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .docs-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .docs-section-heading p {
+    max-width: 500px;
+  }
+
+  /* Footer */
+
+  .docs-footer {
+    padding: 18px 0;
+  }
+
+  .docs-footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+/* ———  CELULARES  ———  */
+
+@media (max-width: 576px) {
+
+  .docs-container {
+    width: calc(100% - 32px);
+  }
+
+  /* Navegación */
+
+  .docs-navbar {
+    padding-top: 12px;
+  }
+
+  .docs-brand img {
+    width: 115px;
+  }
+
+  .docs-nav {
+    justify-content: flex-start;
+    gap: 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .docs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .docs-nav-link {
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  /* Hero */
+
+  .docs-hero {
+    padding: 38px 0;
+  }
+
+  .docs-hero-content {
+    min-height: auto;
+  }
+
+  .docs-hero-art {
+    display: none;
+  }
+
+  .docs-hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .docs-hero h1 {
+    font-size: 2rem;
+  }
+
+  .docs-hero p {
+    font-size: 14px;
+  }
+
+  /* Secciones */
+
+  .docs-intro,
+  .docs-section,
+  .docs-orientation {
+    padding: 48px 0;
+  }
+
+  .docs-intro h2,
+  .docs-section-heading h2,
+  .docs-orientation-title h2 {
+    font-size: 27px;
+  }
+
+  .docs-intro p {
+    font-size: 14px;
+  }
+
+  /* Tarjetas */
+
+  .docs-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .docs-card,
+  .docs-card:last-child {
+    grid-column: auto;
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .docs-card-number {
+    margin-bottom: 22px;
+  }
+
+  .docs-card h3 {
+    font-size: 20px;
+  }
+
+  /* Orientación */
+
+  .docs-orientation-item {
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+  }
+
+  /* Footer */
+
+  .docs-footer {
+    padding: 18px 0;
+  }
+
+  .docs-footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+/* ———  FOOTER RESPONSIVE  ———  */
+
+@media (max-width: 768px) {
+
+  .docs-footer-brand img {
+    max-width: 145px;
+  }
+
+  .docs-footer-inner p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .docs-footer-inner span {
+    font-size: 12px;
+  }
+}
