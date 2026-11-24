@@ -1,0 +1,563 @@
+
+/* ———  PRESENTACIÓN  ———  */
+
+.project-hero {
+  padding: 35px 0 65px;
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.project-breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-breadcrumb a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.project-hero-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-hero-text {
+  max-width: 760px;
+}
+
+.project-hero-text h1 {
+  margin: 12px 0 18px;
+  color: var(--color-text);
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  font-weight: 750;
+  line-height: 1.15;
+}
+
+.project-hero-text p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* ———  DOCUMENTOS  ———  */
+
+.project-documents {
+  padding: 75px 0;
+  background: var(--color-white);
+}
+
+.project-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 38px;
+}
+
+.project-section-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.project-section-heading h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.project-section-heading p {
+  max-width: 390px;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* ———  TARJETAS DOCUMENTALES  ———  */
+
+.project-document-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+}
+
+.project-document-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-document-card:hover {
+  border-color: var(--color-border-orange);
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.06);
+}
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.project-card-number {
+  color: var(--color-text-muted);
+  opacity: 0.55;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.project-card-icon {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-medium);
+  background: var(--color-background-light);
+  color: var(--color-primary);
+  font-size: 1.15rem;
+}
+
+.project-card-icon i {
+  display: block;
+  line-height: 1;
+}
+
+.project-card-category {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.project-document-card h3 {
+  margin: 0 0 12px;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.project-document-card > p,
+.project-card-content > p {
+  margin: 0 0 24px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+/* ———  ENLACES DOCUMENTALES  ———  */
+
+.project-document-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.project-document-link:hover {
+  gap: 15px;
+  color: var(--color-primary-dark);
+}
+
+.project-document-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-document-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-document-list a span {
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.project-document-list a:hover {
+  color: var(--color-primary);
+}
+
+
+/* ———  GESTIÓN DEL PROYECTO  ———  */
+
+/* ——— TARJETA ANCHA: GESTIÓN DEL PROYECTO ——— */
+
+.project-document-card--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  column-gap: 45px;
+  row-gap: 0;
+  align-items: center;
+}
+
+.project-document-card--wide > .project-card-top {
+  grid-column: 1 / -1;
+  margin-bottom: 0px;
+}
+
+.project-document-card--wide > .project-card-content {
+  min-width: 0;
+  align-self: center;
+}
+
+.project-document-card--wide > .project-document-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 30px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.project-card-content {
+  min-width: 0;
+}
+
+.project-card-content .project-card-top {
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.project-card-content .project-card-number {
+  line-height: 1;
+}
+
+.project-card-content .project-card-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+}
+
+.project-card-content .project-card-icon i {
+  font-size: 1.2rem;
+}
+
+.project-card-content > p {
+  max-width: 430px;
+  margin-bottom: 0;
+}
+
+.project-document-card--wide .project-document-list a {
+  min-width: 0;
+}
+
+
+/* ———  MINUTAS DE REUNIONES  ———  */
+
+.project-minutes {
+  margin-top: 75px;
+  padding-top: 55px;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-minutes-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-minute-item {
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 10px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.2s ease;
+}
+
+.project-minute-item:hover {
+  background: var(--color-background-light);
+}
+
+.project-minute-number {
+  color: var(--color-text-muted);
+  opacity: 0.55;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.project-minute-info {
+  min-width: 0;
+}
+
+.project-minute-info h3 {
+  margin: 0 0 6px;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.project-minute-info p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.project-minute-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: var(--color-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.project-minute-link:hover {
+  gap: 14px;
+  color: var(--color-primary-dark);
+}
+
+
+/* ———  INFORMACIÓN ADICIONAL  ———  */
+
+.project-note {
+  padding: 0 0 75px;
+  background: var(--color-white);
+}
+
+.project-note-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px 30px;
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border-orange);
+  border-radius: var(--radius-medium);
+}
+
+.project-note-icon {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-background-orange);
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.project-note-content h2 {
+  margin: 0 0 8px;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.project-note-content p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+
+/* ———  TABLETS  ———  */
+
+@media (max-width: 992px) {
+
+  .project-document-card--wide {
+    gap: 28px;
+  }
+
+  .project-document-card--wide .project-document-list {
+    column-gap: 20px;
+  }
+
+}
+
+
+/* ———  RESPONSIVE  ———  */
+
+@media (max-width: 768px) {
+
+  .project-hero {
+    padding: 25px 0 50px;
+  }
+
+  .project-breadcrumb {
+    margin-bottom: 28px;
+  }
+
+  .project-documents {
+    padding: 55px 0;
+  }
+
+  .project-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .project-section-heading p {
+    max-width: 550px;
+  }
+
+  .project-document-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-document-card--wide {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project-document-card--wide .project-document-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0;
+  }
+
+  .project-minutes {
+    margin-top: 55px;
+    padding-top: 40px;
+  }
+
+  .project-minute-item {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 5px;
+  }
+
+  .project-minute-link {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  .project-note {
+    padding-bottom: 55px;
+  }
+
+}
+
+
+/* ———  CELULARES  ———  */
+
+@media (max-width: 576px) {
+
+  .project-hero {
+    padding: 20px 0 42px;
+  }
+
+  .project-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .project-hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .project-documents {
+    padding: 45px 0;
+  }
+
+  .project-section-heading h2 {
+    font-size: 1.65rem;
+  }
+
+  .project-document-card {
+    padding: 24px 21px;
+  }
+
+  .project-card-top {
+    margin-bottom: 22px;
+  }
+
+  .project-document-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-document-card--wide {
+    gap: 20px;
+  }
+
+  .project-document-card--wide .project-document-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-minute-item {
+    gap: 10px;
+  }
+
+  .project-minute-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-minute-info p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .project-minute-number {
+    font-size: 1.15rem;
+  }
+
+  .project-note {
+    padding-bottom: 45px;
+  }
+
+  .project-note-content {
+    gap: 13px;
+    padding: 20px;
+  }
+
+}

@@ -70,7 +70,7 @@
 .docs-hero {
   padding: 65px 0;
   background: var(--color-background);
-  border-bottom: 1px solid #f0e8df;
+  border-bottom: 1px solid --color-border;
 }
 
 .docs-hero-content {
@@ -210,7 +210,7 @@
   min-height: 420px;
   flex-direction: column;
   padding: 28px 26px;
-  border: 1px solid #eadfd3;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-medium);
   background: var(--color-white);
   transition: border-color 0.2s ease, transform 0.2s ease;
@@ -256,7 +256,7 @@
 .docs-card ul {
   margin: 0 0 23px;
   padding-left: 18px;
-  color: #505761;
+  color: var(--color-text-secondary);
   font-size: 13px;
   line-height: 2;
 }
@@ -365,7 +365,7 @@
 .docs-footer {
   padding: 20px 0;
   background: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .docs-footer-inner {
@@ -391,12 +391,12 @@
 
 .docs-footer-inner p {
   margin: 0;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 0.85rem;
 }
 
 .docs-footer-inner span {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 0.8rem;
   font-weight: 600;
 }
