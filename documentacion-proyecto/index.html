@@ -213,6 +213,79 @@
             </article>
           </div>
 
+          <!-- ——— CRONOGRAMA DEL PROYECTO ——— -->
+
+          <section class="project-minutes project-timeline" id="cronograma">
+            <div class="project-section-heading">
+              <div>
+                <span class="project-section-label"
+                  >PLANIFICACIÓN DEL DESARROLLO</span
+                >
+                <h2>Cronograma del proyecto</h2>
+              </div>
+
+              <p>
+                Planificación de las actividades y etapas de desarrollo de
+                CANALES, con sus respectivos períodos y tiempos estimados de
+                ejecución.
+              </p>
+            </div>
+
+            <div class="project-minute-item">
+              <span class="project-minute-number">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </span>
+
+              <div class="project-minute-info">
+                <h3>Cronograma de desarrollo</h3>
+                <p>
+                  Planificación y seguimiento de las actividades del proyecto ·
+                  PDF
+                </p>
+              </div>
+
+              <a
+                href="ers/Gantt_Canales.pdf"
+                class="project-minute-link"
+                target="cronogramaViewer"
+                onclick="abrirCronograma(event)"
+              >
+                Consultar cronograma
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- VISOR EMERGENTE DEL CRONOGRAMA -->
+
+          <div
+            class="timeline-modal"
+            id="cronogramaModal"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Cronograma de desarrollo de CANALES"
+            hidden
+          >
+            <div class="timeline-modal-content">
+              <div class="timeline-modal-header">
+                <h2>Cronograma de desarrollo</h2>
+
+                <button
+                  type="button"
+                  class="timeline-modal-close"
+                  onclick="cerrarCronograma()"
+                  aria-label="Cerrar visor"
+                >
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+
+              <iframe
+                id="cronogramaFrame"
+                title="Cronograma de desarrollo del proyecto CANALES"
+              ></iframe>
+            </div>
+          </div>
           <!-- ———  MINUTAS  ———  -->
 
           <section class="project-minutes" id="minutas">
@@ -365,5 +438,36 @@
         <span>IFTS 4 • Práctica Profesional IV • 2026</span>
       </div>
     </footer>
+
+    <script>
+      const cronogramaModal = document.getElementById("cronogramaModal");
+      const cronogramaFrame = document.getElementById("cronogramaFrame");
+
+      function abrirCronograma(event) {
+        event.preventDefault();
+
+        cronogramaFrame.src = "ers/Gantt_Canales.pdf";
+        cronogramaModal.hidden = false;
+        document.body.style.overflow = "hidden";
+      }
+
+      function cerrarCronograma() {
+        cronogramaModal.hidden = true;
+        cronogramaFrame.src = "";
+        document.body.style.overflow = "";
+      }
+
+      cronogramaModal.addEventListener("click", (event) => {
+        if (event.target === cronogramaModal) {
+          cerrarCronograma();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !cronogramaModal.hidden) {
+          cerrarCronograma();
+        }
+      });
+    </script>
   </body>
 </html>

@@ -101,8 +101,18 @@
                 <button
                   class="guide-sidebar-link active"
                   type="button"
-                  data-section="cuentas"
+                  data-section="panel"
                   aria-pressed="true"
+                >
+                  <i class="bi bi-speedometer2"></i>
+                  Panel
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="cuentas"
+                  aria-pressed="false"
                 >
                   <i class="bi bi-people"></i>
                   Cuentas
@@ -203,10 +213,142 @@
 
             <!-- CONTENIDO PRINCIPAL -->
             <div class="guide-content">
-              <!-- CUENTAS -->
-              <section class="admin-panel" data-panel="cuentas">
+              <!-- PANEL GENERAL -->
+              <section class="admin-panel" data-panel="panel">
                 <div class="manual-panel-header">
                   <span class="manual-panel-number">01</span>
+                  <div>
+                    <span class="manual-panel-eyebrow">VISTA GENERAL</span>
+                    <h2>Panel de administración</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  El panel de administración es el espacio central desde el que
+                  podés acceder a las principales herramientas de gestión de
+                  CANALES. Desde aquí se organizan los distintos módulos que
+                  permiten administrar el contenido, los usuarios y las
+                  actividades de la plataforma.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Un espacio para gestionar la plataforma</h3>
+                  <p>
+                    El área administrativa reúne los accesos a las diferentes
+                    funcionalidades del sistema. Cada apartado está destinado a
+                    una tarea específica y permite consultar o administrar la
+                    información correspondiente.
+                  </p>
+                  <p>
+                    La navegación lateral permite desplazarte entre los módulos
+                    sin tener que regresar al inicio del área administrativa.
+                  </p>
+                </div>
+
+                <div class="admin-feature-grid">
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-people"></i>
+                    </span>
+                    <h3>Cuentas</h3>
+                    <p>
+                      Administrá los usuarios registrados, sus datos personales
+                      y los roles asignados.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-journal-bookmark"></i>
+                    </span>
+                    <h3>Capacitaciones</h3>
+                    <p>
+                      Creá propuestas educativas, organizá sus contenidos y
+                      administrá su publicación.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-collection"></i>
+                    </span>
+                    <h3>Materiales</h3>
+                    <p>
+                      Gestioná los recursos educativos, sus archivos y su
+                      organización dentro del catálogo.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-newspaper"></i>
+                    </span>
+                    <h3>Publicaciones</h3>
+                    <p>
+                      Creá y administrá novedades, contenidos y publicaciones
+                      del sitio.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-heart"></i>
+                    </span>
+                    <h3>Donaciones</h3>
+                    <p>
+                      Consultá los aportes recibidos y registrá donaciones
+                      manuales.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-credit-card"></i>
+                    </span>
+                    <h3>Inscripciones y pagos</h3>
+                    <p>
+                      Supervisá las inscripciones a las capacitaciones y los
+                      pagos asociados.
+                    </p>
+                  </article>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Accedé a cada apartado</h3>
+                  <p>
+                    Para ingresar a una herramienta, seleccioná su nombre en el
+                    menú lateral. Cada sección contiene las opciones disponibles
+                    para realizar las tareas de administración correspondientes.
+                  </p>
+                </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Panel principal</h3>
+                    <p>Vista general del área administrativa de CANALES.</p>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura completa del panel principal de administración de CANALES"
+                  >
+                    <img
+                      src="../../assets/img/capturas/panel-admin.png"
+                      alt="Vista general del panel de administración de CANALES"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </section>
+
+              <!-- CUENTAS -->
+              <section class="admin-panel" data-panel="cuentas" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">02</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >GESTIÓN DE USUARIOS</span
@@ -305,12 +447,33 @@
                     de la plataforma.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de cuentas</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de cuentas"
+                  >
+                    <img
+                      src="../../assets/img/capturas/cuentas-admin.png"
+                      alt="Pantalla de gestión de cuentas del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- CAPACITACIONES -->
               <section class="admin-panel" data-panel="capacitaciones" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">02</span>
+                  <span class="manual-panel-number">03</span>
                   <div>
                     <span class="manual-panel-eyebrow">OFERTA EDUCATIVA</span>
                     <h2>Administración de capacitaciones</h2>
@@ -476,12 +639,33 @@
                     antes de realizar la operación.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de capacitaciones</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de capacitaciones"
+                  >
+                    <img
+                      src="../../assets/img/capturas/capacitaciones-admin.png"
+                      alt="Pantalla de gestión de capacitaciones del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- MATERIALES -->
               <section class="admin-panel" data-panel="materiales" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">03</span>
+                  <span class="manual-panel-number">04</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >RECURSOS EDUCATIVOS</span
@@ -596,12 +780,33 @@
                     hayas seleccionado el recurso correcto antes de confirmar.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de materiales</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de materiales"
+                  >
+                    <img
+                      src="../../assets/img/capturas/materiales-admin.png"
+                      alt="Pantalla de gestión de materiales del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- PUBLICACIONES -->
               <section class="admin-panel" data-panel="publicaciones" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">04</span>
+                  <span class="manual-panel-number">05</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >CONTENIDOS DEL SITIO</span
@@ -776,12 +981,33 @@
                     Administrador y requiere una confirmación previa.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de publicaciones</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de publicaciones"
+                  >
+                    <img
+                      src="../../assets/img/capturas/publicaciones-admin.png"
+                      alt="Pantalla de gestión de publicaciones del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- DONACIONES -->
               <section class="admin-panel" data-panel="donaciones" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">05</span>
+                  <span class="manual-panel-number">06</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >APORTES Y COLABORACIONES</span
@@ -891,12 +1117,33 @@
                     seleccionado el registro correcto.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de donaciones</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de donaciones"
+                  >
+                    <img
+                      src="../../assets/img/capturas/donaciones-admin.png"
+                      alt="Pantalla de gestión de donaciones del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- INSCRIPCIONES Y PAGOS -->
               <section class="admin-panel" data-panel="inscripciones" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">06</span>
+                  <span class="manual-panel-number">07</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >SEGUIMIENTO ACADÉMICO</span
@@ -1075,12 +1322,33 @@
                     pendientes de revisión.
                   </p>
                 </div>
+
+                <div class="manual-screenshot-section">
+                  <div class="manual-screenshot-heading">
+                    <span class="manual-screenshot-label"
+                      >Vista del sistema</span
+                    >
+                    <h3>Gestión de inscripciones y pagos</h3>
+                  </div>
+
+                  <div
+                    class="manual-page-viewer"
+                    tabindex="0"
+                    aria-label="Captura de la gestión de inscripciones y pagos"
+                  >
+                    <img
+                      src="../../assets/img/capturas/inscripciones-admin.png"
+                      alt="Pantalla de gestión de inscripciones y pagos del administrador"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </section>
 
               <!-- SEÑAS LSA -->
               <section class="admin-panel" data-panel="senas" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">07</span>
+                  <span class="manual-panel-number">08</span>
                   <div>
                     <span class="manual-panel-eyebrow">ACCESIBILIDAD</span>
                     <h2>Señas LSA</h2>
@@ -1126,7 +1394,7 @@
               <!-- REPORTES -->
               <section class="admin-panel" data-panel="reportes" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">08</span>
+                  <span class="manual-panel-number">09</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >INFORMACIÓN Y SEGUIMIENTO</span
@@ -1157,7 +1425,7 @@
               <!-- CONFIGURACIÓN -->
               <section class="admin-panel" data-panel="configuracion" hidden>
                 <div class="manual-panel-header">
-                  <span class="manual-panel-number">09</span>
+                  <span class="manual-panel-number">10</span>
                   <div>
                     <span class="manual-panel-eyebrow"
                       >PREFERENCIAS DEL SISTEMA</span
@@ -1232,7 +1500,7 @@
           });
         });
 
-        showSection("cuentas");
+        showSection("panel");
       });
     </script>
   </body>
