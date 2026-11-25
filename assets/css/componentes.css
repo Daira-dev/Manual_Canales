@@ -1,4 +1,3 @@
-
 /* ———  NAVEGACIÓN PRINCIPAL  ———  */
 
 .docs-header {
@@ -399,4 +398,259 @@
   color: var(--color-white);
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+
+/* ——— MENÚ LATERAL DE GUÍAS ——— */
+
+.guide-sidebar {
+  position: sticky;
+  top: 25px;
+  padding: 22px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-background);
+}
+
+.guide-sidebar-title {
+  display: block;
+  margin: 0 10px 15px;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.guide-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.guide-sidebar-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-medium);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.guide-sidebar-link i {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.guide-sidebar-link:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.guide-sidebar-link.active {
+  border-color: var(--color-border-orange);
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.guide-sidebar-link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.guide-sidebar-help {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 14px 12px;
+  border-radius: var(--radius-medium);
+  background: var(--color-background-light);
+  color: var(--color-text-secondary);
+}
+
+.guide-sidebar-help i {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.guide-sidebar-help p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+
+/* ——— DISTRIBUCIÓN DE GUÍAS ——— */
+
+.guide-section {
+  padding: 75px 0 90px;
+  background: var(--color-white);
+}
+
+.guide-layout {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  align-items: start;
+  gap: 35px;
+  scroll-margin-top: 30px;
+}
+
+/* ——— PANEL DE CONTENIDO DE GUÍAS ——— */
+
+.guide-content {
+  min-width: 0;
+  min-height: 520px;
+  padding: 35px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-white);
+  box-shadow: 0 5px 20px rgba(31, 41, 55, 0.035);
+}
+
+/* ——— ENCABEZADOS DE APARTADOS DEL MANUAL ——— */
+
+.manual-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 28px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.manual-panel-number {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  background: var(--color-background-light);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.manual-panel-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.manual-panel-header h2 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+
+/* ——— VISOR DE CAPTURAS DEL MANUAL DE USUARIO ——— */
+
+.manual-screenshot-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.manual-screenshot-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.manual-screenshot-heading h3,
+.manual-screenshot-heading h4 {
+  margin: 0 0 6px;
+  color: var(--color-text);
+}
+
+.manual-screenshot-heading p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+
+/* Visor de capturas completas */
+
+.manual-page-viewer {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-background-soft);
+  box-shadow: var(--shadow-md);
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-background-soft);
+}
+
+.manual-page-viewer img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* Accesibilidad del visor */
+
+.manual-page-viewer:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Barra de desplazamiento en navegadores WebKit */
+
+.manual-page-viewer::-webkit-scrollbar {
+  width: 9px;
+}
+
+.manual-page-viewer::-webkit-scrollbar-track {
+  background: var(--color-background-soft);
+}
+
+.manual-page-viewer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-primary);
+}
+
+.manual-page-viewer::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Ajustes para pantallas pequeñas */
+
+@media (max-width: 650px) {
+  .manual-page-viewer {
+    max-height: 500px;
+    border-radius: var(--radius-medium);
+  }
+
+  .manual-screenshot-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .manual-scroll-hint {
+    font-size: 0.75rem;
+  }
 }

@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guía de usuario del área administrativa de CANALES. Conocé las herramientas disponibles para gestionar cuentas, capacitaciones, materiales, publicaciones, donaciones e inscripciones."
+    />
+    <title>Área administrativa | Manual de Usuario - CANALES</title>
+
+    <link rel="icon" href="../../assets/img/iconos/icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="../../assets/css/estilos-globales.css" />
+    <link rel="stylesheet" href="../../assets/css/componentes.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../../assets/css/documentacion-proyecto.css" />
+    <link rel="stylesheet" href="../../assets/css/manual-usuario.css" />
+    <link rel="stylesheet" href="../../assets/css/primeros-pasos.css" />
+    <link rel="stylesheet" href="../../assets/css/admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="docs-header">
+      <div class="docs-container docs-navbar">
+        <a class="docs-brand" href="../../index.html" aria-label="Inicio">
+          <img
+            src="../../assets/img/logo-canales.png"
+            alt="Asociación Civil Canales"
+          />
+        </a>
+
+        <nav class="docs-nav" aria-label="Navegación principal">
+          <a href="../../index.html" class="docs-nav-link">Inicio</a>
+          <a
+            href="../index.html"
+            class="docs-nav-link active"
+            aria-current="page"
+          >
+            Manual de Usuario
+          </a>
+          <a
+            href="../../documentacion-proyecto/index.html"
+            class="docs-nav-link"
+          >
+            Documentación
+          </a>
+          <a href="../../manual-tecnico/index.html" class="docs-nav-link">
+            Manual Técnico
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- PRESENTACIÓN -->
+      <section class="manual-page-hero">
+        <div class="docs-container">
+          <nav class="project-breadcrumb" aria-label="Ruta de navegación">
+            <a href="../index.html">Manual de Usuario</a>
+            <i class="bi bi-chevron-right"></i>
+            <span aria-current="page">Área administrativa</span>
+          </nav>
+
+          <div class="manual-page-intro">
+            <div class="manual-page-intro-content">
+              <span class="docs-eyebrow">Manual de usuario</span>
+              <h1>Área administrativa</h1>
+              <p>
+                En esta guía vas a conocer las herramientas disponibles para
+                administrar la plataforma CANALES. Desde este espacio podés
+                gestionar cuentas, capacitaciones, materiales educativos,
+                publicaciones, donaciones, inscripciones y pagos.
+              </p>
+            </div>
+
+            <div class="manual-page-intro-visual" aria-hidden="true">
+              <div class="manual-page-intro-icon">
+                <i class="bi bi-person-gear"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENIDO DE LA GUÍA -->
+      <section class="guide-section">
+        <div class="docs-container">
+          <div class="guide-layout">
+            <!-- NAVEGACIÓN LATERAL -->
+            <aside class="guide-sidebar" aria-label="Contenido de la guía">
+              <h2 class="guide-sidebar-title">En esta guía</h2>
+
+              <nav class="guide-sidebar-nav">
+                <button
+                  class="guide-sidebar-link active"
+                  type="button"
+                  data-section="cuentas"
+                  aria-pressed="true"
+                >
+                  <i class="bi bi-people"></i>
+                  Cuentas
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="capacitaciones"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-journal-bookmark"></i>
+                  Capacitaciones
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="materiales"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-collection"></i>
+                  Materiales
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="publicaciones"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-newspaper"></i>
+                  Publicaciones
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="donaciones"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-heart"></i>
+                  Donaciones
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="inscripciones"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-credit-card"></i>
+                  Inscripciones y pagos
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="senas"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-hand-index-thumb"></i>
+                  Señas LSA
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="reportes"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-bar-chart"></i>
+                  Reportes
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                </button>
+
+                <button
+                  class="guide-sidebar-link"
+                  type="button"
+                  data-section="configuracion"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-gear"></i>
+                  Configuración
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                </button>
+              </nav>
+
+              <div class="guide-sidebar-help">
+                <i class="bi bi-info-circle"></i>
+                <p>
+                  Seleccioná cada apartado para consultar las herramientas
+                  disponibles y conocer cómo se utilizan.
+                </p>
+              </div>
+            </aside>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="guide-content">
+              <!-- CUENTAS -->
+              <section class="admin-panel" data-panel="cuentas">
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">01</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >GESTIÓN DE USUARIOS</span
+                    >
+                    <h2>Administración de cuentas</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  Desde este apartado podés consultar y administrar las cuentas
+                  registradas en CANALES. También permite gestionar los datos
+                  personales y los roles asignados a cada usuario.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Consultá las cuentas registradas</h3>
+                  <p>
+                    El listado reúne las cuentas de usuario y presenta
+                    información básica para identificarlas, como nombre, correo
+                    electrónico y roles asignados.
+                  </p>
+                  <p>
+                    Para localizar una cuenta podés utilizar el buscador, que
+                    permite consultar por nombre, correo electrónico o DNI.
+                    También podés filtrar los resultados según el rol del
+                    usuario.
+                  </p>
+                </div>
+
+                <div class="admin-feature-grid">
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-search"></i>
+                    </span>
+                    <h3>Buscar y filtrar</h3>
+                    <p>
+                      Localizá cuentas mediante datos personales y filtrá el
+                      listado por los roles disponibles.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-person-plus"></i>
+                    </span>
+                    <h3>Crear cuentas</h3>
+                    <p>
+                      Registrá nuevos usuarios e indicá sus datos personales,
+                      credenciales y roles.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-pencil-square"></i>
+                    </span>
+                    <h3>Editar cuentas</h3>
+                    <p>
+                      Modificá los datos de una cuenta y actualizá los roles
+                      asignados.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-key"></i>
+                    </span>
+                    <h3>Cambiar contraseñas</h3>
+                    <p>
+                      Actualizá las credenciales de acceso desde la edición de
+                      la cuenta correspondiente.
+                    </p>
+                  </article>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Eliminar una cuenta</h3>
+                  <p>
+                    La plataforma permite eliminar cuentas mediante una
+                    confirmación previa. Sin embargo, la operación puede estar
+                    restringida cuando el usuario tiene capacitaciones
+                    asignadas.
+                  </p>
+                  <p>
+                    Antes de confirmar una eliminación, revisá que se trate de
+                    la cuenta correcta y tené en cuenta las relaciones que
+                    mantiene con otras partes del sistema.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-info-circle"></i>
+                  <p>
+                    Los cambios realizados sobre una cuenta pueden afectar los
+                    permisos y las opciones disponibles para ese usuario dentro
+                    de la plataforma.
+                  </p>
+                </div>
+              </section>
+
+              <!-- CAPACITACIONES -->
+              <section class="admin-panel" data-panel="capacitaciones" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">02</span>
+                  <div>
+                    <span class="manual-panel-eyebrow">OFERTA EDUCATIVA</span>
+                    <h2>Administración de capacitaciones</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  En este apartado podés gestionar las capacitaciones que ofrece
+                  CANALES. Permite crear propuestas educativas, modificar su
+                  información, organizar los contenidos y controlar su
+                  publicación en el sitio.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Consultá las capacitaciones</h3>
+                  <p>
+                    El listado administrativo presenta las propuestas
+                    disponibles junto con información como título, modalidad,
+                    tipo de capacitación, duración y docentes asignados.
+                  </p>
+                  <p>
+                    Podés buscar una capacitación por su título y recorrer los
+                    resultados mediante la paginación.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Creá o editá una capacitación</h3>
+                  <p>
+                    Desde el formulario de administración podés definir la
+                    información general de cada propuesta educativa.
+                  </p>
+
+                  <div class="admin-detail-list">
+                    <div class="admin-detail-item">
+                      <i class="bi bi-card-text"></i>
+                      <div>
+                        <strong>Información general</strong>
+                        <p>
+                          Título, descripción, información ampliada, modalidad
+                          virtual o presencial y nivel de dificultad.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-currency-dollar"></i>
+                      <div>
+                        <strong>Modalidad de pago</strong>
+                        <p>
+                          Definí si la capacitación es gratuita o arancelada. En
+                          las propuestas pagas podés establecer su precio.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-people"></i>
+                      <div>
+                        <strong>Docentes asignados</strong>
+                        <p>
+                          Seleccioná hasta dos docentes responsables de la
+                          capacitación.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-calendar-week"></i>
+                      <div>
+                        <strong>Cronograma y cupos</strong>
+                        <p>
+                          Establecé fechas de inicio y finalización, días de
+                          cursada, horarios, cupo máximo y fecha límite de
+                          inscripción.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-list-check"></i>
+                      <div>
+                        <strong>Contenidos</strong>
+                        <p>
+                          Organizá los temas y contenidos que forman parte de la
+                          propuesta educativa.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-image"></i>
+                      <div>
+                        <strong>Imagen de portada</strong>
+                        <p>
+                          Incorporá una imagen para identificar visualmente la
+                          capacitación.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Controlá la visibilidad</h3>
+                  <p>
+                    Cada capacitación puede encontrarse en uno de los siguientes
+                    estados de publicación:
+                  </p>
+
+                  <div class="admin-status-list">
+                    <div class="admin-status-item">
+                      <span class="admin-status-dot admin-status-draft"></span>
+                      <div>
+                        <strong>Borrador</strong>
+                        <p>
+                          La capacitación todavía no se muestra en el catálogo
+                          público.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-published"
+                      ></span>
+                      <div>
+                        <strong>Publicada</strong>
+                        <p>
+                          La capacitación está visible para las personas que
+                          visitan el sitio.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span class="admin-status-dot admin-status-hidden"></span>
+                      <div>
+                        <strong>Oculta</strong>
+                        <p>
+                          La capacitación deja de mostrarse temporalmente en el
+                          catálogo público.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-lightbulb"></i>
+                  <p>
+                    La duración y la cantidad de encuentros se calculan
+                    automáticamente a partir de las fechas y los días de cursada
+                    definidos.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Eliminar una capacitación</h3>
+                  <p>
+                    También podés eliminar una capacitación desde el listado
+                    administrativo. La plataforma solicita una confirmación
+                    antes de realizar la operación.
+                  </p>
+                </div>
+              </section>
+
+              <!-- MATERIALES -->
+              <section class="admin-panel" data-panel="materiales" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">03</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >RECURSOS EDUCATIVOS</span
+                    >
+                    <h2>Administración de materiales</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  Desde este apartado podés administrar los materiales y
+                  recursos educativos disponibles en la plataforma. Es posible
+                  organizarlos, actualizar su información y controlar cuáles se
+                  muestran en el catálogo.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Explorá el catálogo administrativo</h3>
+                  <p>
+                    Los materiales se presentan organizados por categorías. El
+                    listado permite consultar sus títulos, autores cuando
+                    corresponde, estado de publicación y orden de aparición.
+                  </p>
+                  <p>
+                    Podés buscar recursos por título o autor y filtrar el
+                    listado para mostrar materiales publicados u ocultos.
+                  </p>
+                </div>
+
+                <div class="admin-feature-grid">
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <h3>Crear materiales</h3>
+                    <p>
+                      Incorporá nuevos recursos y completá la información
+                      correspondiente a su tipo.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-pencil-square"></i>
+                    </span>
+                    <h3>Editar información</h3>
+                    <p>
+                      Actualizá los datos descriptivos y los archivos o enlaces
+                      asociados a cada recurso.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-eye"></i>
+                    </span>
+                    <h3>Controlar publicación</h3>
+                    <p>
+                      Definí si un material se encuentra publicado o permanece
+                      oculto en el catálogo.
+                    </p>
+                  </article>
+
+                  <article class="admin-feature-card">
+                    <span class="admin-feature-icon">
+                      <i class="bi bi-sort-numeric-down"></i>
+                    </span>
+                    <h3>Organizar el orden</h3>
+                    <p>
+                      Configurá el orden en el que los recursos aparecen dentro
+                      del catálogo.
+                    </p>
+                  </article>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Incorporá archivos y enlaces</h3>
+                  <p>
+                    Según el tipo de material, el formulario permite agregar
+                    información descriptiva, autores, año, enlaces externos,
+                    imágenes de portada y archivos PDF.
+                  </p>
+                  <p>
+                    Algunos recursos cuentan con información complementaria. Por
+                    ejemplo, los videolibros pueden incluir transcripciones y
+                    los recursos propios pueden presentar datos editoriales y
+                    enlaces de acceso o compra.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-paperclip"></i>
+                  <p>
+                    Los archivos adjuntos y las imágenes admiten formatos y
+                    tamaños máximos específicos. El formulario informa las
+                    restricciones correspondientes al cargar cada recurso.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Eliminar un material</h3>
+                  <p>
+                    La eliminación requiere una confirmación previa. Una vez
+                    realizada, el material deja de formar parte del catálogo y
+                    se eliminan también los archivos adjuntos asociados.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-warning">
+                  <i class="bi bi-exclamation-triangle"></i>
+                  <p>
+                    La eliminación de un material es irreversible. Verificá que
+                    hayas seleccionado el recurso correcto antes de confirmar.
+                  </p>
+                </div>
+              </section>
+
+              <!-- PUBLICACIONES -->
+              <section class="admin-panel" data-panel="publicaciones" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">04</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >CONTENIDOS DEL SITIO</span
+                    >
+                    <h2>Administración de publicaciones</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  Este apartado permite administrar las novedades y los
+                  contenidos publicados en CANALES. Desde aquí podés crear
+                  publicaciones, actualizar información existente y definir
+                  cuándo y quiénes pueden acceder a cada contenido.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Consultá las publicaciones</h3>
+                  <p>
+                    El listado administrativo reúne las publicaciones y permite
+                    buscarlas por título o palabras clave. También podés aplicar
+                    filtros según su estado, visibilidad, categoría y etiquetas.
+                  </p>
+                  <p>
+                    Los resultados pueden ordenarse por fecha o relevancia.
+                    Además, el panel presenta indicadores de publicaciones y un
+                    apartado con próximas publicaciones programadas.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Creá y editá contenidos</h3>
+                  <p>
+                    El editor permite preparar publicaciones con información
+                    textual y recursos multimedia.
+                  </p>
+
+                  <div class="admin-detail-list">
+                    <div class="admin-detail-item">
+                      <i class="bi bi-type"></i>
+                      <div>
+                        <strong>Contenido principal</strong>
+                        <p>
+                          Definí el título y el cuerpo de la publicación.
+                          También podés agregar un resumen.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-tags"></i>
+                      <div>
+                        <strong>Organización</strong>
+                        <p>
+                          Asigná categorías, etiquetas e idioma para organizar y
+                          facilitar la búsqueda de contenidos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-calendar-event"></i>
+                      <div>
+                        <strong>Fecha de publicación</strong>
+                        <p>
+                          Establecé una fecha y hora para publicar un contenido.
+                          También podés programar publicaciones futuras.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-people"></i>
+                      <div>
+                        <strong>Visibilidad</strong>
+                        <p>
+                          Configurá si el contenido será público, interno o
+                          estará disponible para grupos determinados.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-detail-item">
+                      <i class="bi bi-images"></i>
+                      <div>
+                        <strong>Recursos multimedia</strong>
+                        <p>
+                          Incorporá imágenes de portada, archivos adjuntos,
+                          audio, video LSA, enlaces externos y transcripciones.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Estados de una publicación</h3>
+                  <p>
+                    Durante la preparación y gestión de un contenido podés
+                    utilizar las siguientes opciones:
+                  </p>
+
+                  <div class="admin-status-list">
+                    <div class="admin-status-item">
+                      <span class="admin-status-dot admin-status-draft"></span>
+                      <div>
+                        <strong>Borrador</strong>
+                        <p>Permite guardar un contenido sin publicarlo.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span class="admin-status-dot admin-status-review"></span>
+                      <div>
+                        <strong>En revisión</strong>
+                        <p>Identifica los contenidos enviados a revisión.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-published"
+                      ></span>
+                      <div>
+                        <strong>Publicado</strong>
+                        <p>
+                          Indica que el contenido se encuentra publicado, de
+                          acuerdo con su fecha y configuración de visibilidad.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-cloud-check"></i>
+                  <p>
+                    Durante la edición, el sistema cuenta con autoguardado
+                    automático. También mantiene un historial de versiones que
+                    permite consultar cambios anteriores y recuperar una versión
+                    previa.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Historial de versiones</h3>
+                  <p>
+                    Cada publicación puede contar con un registro de versiones
+                    que incluye información sobre la fecha, el autor, el estado
+                    y la visibilidad de cada versión.
+                  </p>
+                  <p>
+                    Desde ese historial podés seleccionar versiones anteriores,
+                    comparar sus principales campos y recuperar una versión
+                    previa cuando sea necesario.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Consultar las novedades publicadas</h3>
+                  <p>
+                    Las publicaciones disponibles para el público pueden
+                    consultarse desde la sección de novedades del sitio. Allí es
+                    posible buscar contenidos, filtrar por categoría y acceder
+                    al detalle de cada publicación.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-warning">
+                  <i class="bi bi-shield-check"></i>
+                  <p>
+                    La eliminación de publicaciones está reservada al rol
+                    Administrador y requiere una confirmación previa.
+                  </p>
+                </div>
+              </section>
+
+              <!-- DONACIONES -->
+              <section class="admin-panel" data-panel="donaciones" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">05</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >APORTES Y COLABORACIONES</span
+                    >
+                    <h2>Administración de donaciones</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  Desde este apartado podés consultar y administrar los
+                  registros de donaciones recibidas por CANALES. También permite
+                  registrar aportes manuales y consultar información general
+                  sobre las operaciones.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Consultá las donaciones</h3>
+                  <p>
+                    El listado presenta información de cada aporte, como
+                    identificador, donante, correo electrónico, monto, fecha de
+                    recepción y medio de pago.
+                  </p>
+                  <p>
+                    Podés buscar donaciones por nombre o correo electrónico del
+                    donante y por medio de pago. La información se organiza
+                    mediante paginación.
+                  </p>
+                </div>
+
+                <div class="admin-summary-grid">
+                  <article class="admin-summary-card">
+                    <i class="bi bi-cash-stack"></i>
+                    <div>
+                      <strong>Total recaudado</strong>
+                      <p>Importe acumulado de las donaciones registradas.</p>
+                    </div>
+                  </article>
+
+                  <article class="admin-summary-card">
+                    <i class="bi bi-collection"></i>
+                    <div>
+                      <strong>Cantidad de aportes</strong>
+                      <p>Número de donaciones registradas en el sistema.</p>
+                    </div>
+                  </article>
+
+                  <article class="admin-summary-card">
+                    <i class="bi bi-calculator"></i>
+                    <div>
+                      <strong>Ticket promedio</strong>
+                      <p>Promedio del importe de las donaciones registradas.</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Registrá una donación manual</h3>
+                  <p>
+                    Cuando necesitás incorporar un aporte que no se registró
+                    automáticamente, podés cargarlo desde el formulario
+                    correspondiente.
+                  </p>
+                  <p>
+                    La plataforma permite asociar la donación a un donante
+                    existente, registrar una persona nueva o identificar el
+                    aporte como anónimo.
+                  </p>
+                  <p>
+                    Para completar el registro se indican el monto, la fecha de
+                    recepción, el medio de pago y, de manera opcional, una
+                    referencia.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Consultá el detalle de una donación</h3>
+                  <p>
+                    Cada registro permite consultar los datos asociados al
+                    donante, el importe, la fecha y el medio de pago. Esta
+                    información se presenta en modo de consulta.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-warning">
+                  <i class="bi bi-lock"></i>
+                  <p>
+                    Los registros de donaciones no se pueden editar. Esta
+                    restricción busca preservar la integridad de la información
+                    contable y el historial de operaciones.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Exportá la información</h3>
+                  <p>
+                    El módulo permite exportar información en formato CSV.
+                    También podés utilizar la opción de impresión para imprimir
+                    el listado o guardarlo como PDF desde el navegador.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Eliminá un registro</h3>
+                  <p>
+                    La plataforma permite eliminar una donación mediante una
+                    confirmación previa. Antes de continuar, verificá que hayas
+                    seleccionado el registro correcto.
+                  </p>
+                </div>
+              </section>
+
+              <!-- INSCRIPCIONES Y PAGOS -->
+              <section class="admin-panel" data-panel="inscripciones" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">06</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >SEGUIMIENTO ACADÉMICO</span
+                    >
+                    <h2>Inscripciones y pagos</h2>
+                  </div>
+                </div>
+
+                <p class="admin-intro">
+                  Este apartado permite supervisar las inscripciones a las
+                  capacitaciones y consultar los pagos asociados. La información
+                  se organiza en dos secciones independientes: Inscripciones y
+                  Pagos.
+                </p>
+
+                <div class="admin-info-block">
+                  <h3>Administrá las inscripciones</h3>
+                  <p>
+                    La sección de inscripciones reúne los registros de
+                    estudiantes anotados en capacitaciones gratuitas y
+                    aranceladas.
+                  </p>
+                  <p>
+                    Podés buscar estudiantes por nombre, correo electrónico o
+                    DNI. También permite filtrar por capacitación, modalidad y
+                    estado de inscripción.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Estados de inscripción</h3>
+
+                  <div class="admin-status-list">
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-confirmed"
+                      ></span>
+                      <div>
+                        <strong>Confirmada</strong>
+                        <p>La inscripción se encuentra confirmada.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span class="admin-status-dot admin-status-active"></span>
+                      <div>
+                        <strong>Activa</strong>
+                        <p>
+                          Identifica registros activos, incluidos algunos
+                          registros históricos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-pending"
+                      ></span>
+                      <div>
+                        <strong>Pendiente de pago</strong>
+                        <p>La inscripción todavía tiene un pago pendiente.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-cancelled"
+                      ></span>
+                      <div>
+                        <strong>Cancelada</strong>
+                        <p>La inscripción fue dada de baja.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Consultá el detalle de una inscripción</h3>
+                  <p>
+                    Al abrir un registro podés consultar los datos del
+                    estudiante, su DNI, teléfono, capacitación asociada,
+                    modalidad, fecha y estado de inscripción.
+                  </p>
+                  <p>
+                    También se muestran los pagos relacionados con esa
+                    inscripción, cuando existen.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-warning">
+                  <i class="bi bi-exclamation-circle"></i>
+                  <p>
+                    La baja de una inscripción requiere una confirmación previa.
+                    Verificá los datos del registro antes de realizar esta
+                    operación.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Administrá los pagos</h3>
+                  <p>
+                    La sección de pagos reúne los registros de operaciones
+                    asociadas a las capacitaciones. Podés buscar por nombre,
+                    correo electrónico o DNI del estudiante y filtrar por
+                    capacitación y estado.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Estados de pago</h3>
+
+                  <div class="admin-status-list">
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-approved"
+                      ></span>
+                      <div>
+                        <strong>Aprobado</strong>
+                        <p>El pago fue aprobado.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-pending"
+                      ></span>
+                      <div>
+                        <strong>Pendiente</strong>
+                        <p>El pago todavía requiere una resolución.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-status-item">
+                      <span
+                        class="admin-status-dot admin-status-rejected"
+                      ></span>
+                      <div>
+                        <strong>Rechazado</strong>
+                        <p>El pago fue rechazado.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Revisá los datos de un pago</h3>
+                  <p>
+                    El detalle de cada operación permite consultar información
+                    del estudiante, DNI, capacitación, importe, método de pago,
+                    fecha, referencia y observaciones.
+                  </p>
+                  <p>
+                    Cuando hay un comprobante disponible, podés visualizarlo
+                    para revisar la documentación asociada a la operación.
+                  </p>
+                </div>
+
+                <div class="admin-info-block">
+                  <h3>Aprobá o rechazá transferencias</h3>
+                  <p>
+                    Las transferencias pendientes pueden aprobarse o rechazarse
+                    desde el módulo de pagos.
+                  </p>
+                  <p>
+                    Para rechazar una transferencia es obligatorio indicar un
+                    motivo. El registro y el comprobante se conservan para su
+                    consulta posterior.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-info-circle"></i>
+                  <p>
+                    Las acciones de aprobación y rechazo están disponibles
+                    únicamente para transferencias que todavía se encuentran
+                    pendientes de revisión.
+                  </p>
+                </div>
+              </section>
+
+              <!-- SEÑAS LSA -->
+              <section class="admin-panel" data-panel="senas" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">07</span>
+                  <div>
+                    <span class="manual-panel-eyebrow">ACCESIBILIDAD</span>
+                    <h2>Señas LSA</h2>
+                  </div>
+                </div>
+
+                <div class="admin-construction-card">
+                  <div class="admin-construction-icon">
+                    <i class="bi bi-cone-striped"></i>
+                  </div>
+
+                  <span class="admin-construction-label">
+                    En construcción
+                  </span>
+
+                  <h3>Esta sección todavía no está disponible</h3>
+
+                  <p>
+                    El módulo de Señas LSA forma parte de una iniciativa
+                    orientada a incorporar Lengua de Señas Argentina en
+                    diferentes espacios de la plataforma y mejorar la
+                    accesibilidad de sus contenidos.
+                  </p>
+
+                  <p>
+                    Aunque cuenta con una estructura inicial de gestión, la
+                    información todavía no se encuentra integrada con las demás
+                    secciones del sistema ni disponible para su utilización en
+                    el sitio.
+                  </p>
+                </div>
+
+                <div class="admin-notice admin-notice-info">
+                  <i class="bi bi-universal-access"></i>
+                  <p>
+                    El objetivo de esta iniciativa es avanzar hacia una
+                    plataforma con contenidos más accesibles para la comunidad
+                    sorda.
+                  </p>
+                </div>
+              </section>
+
+              <!-- REPORTES -->
+              <section class="admin-panel" data-panel="reportes" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">08</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >INFORMACIÓN Y SEGUIMIENTO</span
+                    >
+                    <h2>Reportes</h2>
+                  </div>
+                </div>
+
+                <div class="admin-construction-card">
+                  <div class="admin-construction-icon">
+                    <i class="bi bi-bar-chart-line"></i>
+                  </div>
+
+                  <span class="admin-construction-label">
+                    En construcción
+                  </span>
+
+                  <h3>Esta sección todavía no está disponible</h3>
+
+                  <p>
+                    El apartado de Reportes se encuentra en desarrollo.
+                    Actualmente no cuenta con herramientas habilitadas para
+                    consultar o generar informes desde la plataforma.
+                  </p>
+                </div>
+              </section>
+
+              <!-- CONFIGURACIÓN -->
+              <section class="admin-panel" data-panel="configuracion" hidden>
+                <div class="manual-panel-header">
+                  <span class="manual-panel-number">09</span>
+                  <div>
+                    <span class="manual-panel-eyebrow"
+                      >PREFERENCIAS DEL SISTEMA</span
+                    >
+                    <h2>Configuración</h2>
+                  </div>
+                </div>
+
+                <div class="admin-construction-card">
+                  <div class="admin-construction-icon">
+                    <i class="bi bi-gear"></i>
+                  </div>
+
+                  <span class="admin-construction-label">
+                    En construcción
+                  </span>
+
+                  <h3>Esta sección todavía no está disponible</h3>
+
+                  <p>
+                    El apartado de Configuración se encuentra en desarrollo. Por
+                    el momento no hay opciones de configuración general
+                    disponibles para administrar desde este espacio.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="docs-footer">
+      <div class="docs-container docs-footer-inner">
+        <a
+          href="../../index.html"
+          class="docs-footer-brand"
+          aria-label="Inicio"
+        >
+          <img
+            src="../../assets/img/iconos/icon.png"
+            alt="Asociación Civil Canales"
+          />
+        </a>
+        <span>IFTS 4 • Práctica Profesional IV • 2026</span>
+      </div>
+    </footer>
+
+    <!-- INTERACCIÓN DEL MENÚ -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuLinks = document.querySelectorAll(".guide-sidebar-link");
+        const panels = document.querySelectorAll(".admin-panel");
+
+        function showSection(sectionName) {
+          menuLinks.forEach((link) => {
+            const isActive = link.dataset.section === sectionName;
+
+            link.classList.toggle("active", isActive);
+            link.setAttribute("aria-pressed", String(isActive));
+          });
+
+          panels.forEach((panel) => {
+            panel.hidden = panel.dataset.panel !== sectionName;
+          });
+        }
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            showSection(link.dataset.section);
+          });
+        });
+
+        showSection("cuentas");
+      });
+    </script>
+  </body>
+</html>

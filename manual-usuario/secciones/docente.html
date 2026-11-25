@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manual de usuario del área docente de CANALES."
+    />
+    <title>Área docente | Manual de Usuario - CANALES</title>
+    
+    <link rel="icon" href="../../assets/img/iconos/icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="../../assets/css/estilos-globales.css" />
+    <link rel="stylesheet" href="../../assets/css/componentes.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../../assets/css/documentacion-proyecto.css" />
+    <link rel="stylesheet" href="../../assets/css/manual-usuario.css" />
+    <link rel="stylesheet" href="../../assets/css/primeros-pasos.css" />
+    <link rel="stylesheet" href="../../assets/css/docente.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <!-- NAVEGACIÓN PRINCIPAL -->
+      <header class="docs-header">
+        <div class="docs-container docs-navbar">
+          <a class="docs-brand" href="../../index.html" aria-label="Inicio">
+            <img
+              src="../../assets/img/logo-canales.png"
+              alt="Asociación Civil Canales"
+            />
+          </a>
+
+          <nav class="docs-nav" aria-label="Navegación principal">
+            <a href="../../index.html" class="docs-nav-link">Inicio</a>
+            <a
+              href="../index.html"
+              class="docs-nav-link active"
+              aria-current="page"
+            >
+              Manual de Usuario
+            </a>
+            <a
+              href="../../documentacion-proyecto/index.html"
+              class="docs-nav-link"
+            >
+              Documentación
+            </a>
+            <a href="../../manual-tecnico/index.html" class="docs-nav-link">
+              Manual Técnico
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- PRESENTACIÓN -->
+        <section class="manual-page-hero">
+          <div class="docs-container">
+            <nav class="project-breadcrumb" aria-label="Ruta de navegación">
+              <a href="../index.html">Manual de Usuario</a>
+              <i class="bi bi-chevron-right"></i>
+              <span aria-current="page">Área docente</span>
+            </nav>
+
+            <div class="manual-page-intro">
+              <div class="manual-page-intro-content">
+                <span class="docs-eyebrow">GUÍA PARA DOCENTES</span>
+
+                <h1>Área docente</h1>
+
+                <p>
+                  En esta sección vas a aprender a gestionar tus capacitaciones,
+                  consultar la información de los estudiantes, registrar
+                  asistencias y cargar calificaciones. Una guía para acompañar y
+                  realizar el seguimiento académico de cada curso desde CANALES.
+                </p>
+              </div>
+
+              <div class="manual-page-intro-visual">
+                <div class="manual-page-intro-icon">
+                  <i class="bi bi-easel2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="guide-section">
+          <div class="docs-container">
+            <div class="guide-layout">
+              <!-- MENÚ LATERAL -->
+              <aside class="guide-sidebar">
+                <span class="guide-sidebar-title">ÁREA DOCENTE</span>
+
+                <nav
+                  class="guide-sidebar-nav"
+                  aria-label="Apartados del área docente"
+                >
+                  <button
+                    class="guide-sidebar-link active"
+                    type="button"
+                    data-section="capacitaciones"
+                    aria-pressed="true"
+                  >
+                    <i class="bi bi-easel2"></i>
+                    <span>Mis capacitaciones</span>
+                  </button>
+
+                  <button
+                    class="guide-sidebar-link"
+                    type="button"
+                    data-section="estudiantes"
+                    aria-pressed="false"
+                  >
+                    <i class="bi bi-people"></i>
+                    <span>Gestión de estudiantes</span>
+                  </button>
+
+                  <button
+                    class="guide-sidebar-link"
+                    type="button"
+                    data-section="clases"
+                    aria-pressed="false"
+                  >
+                    <i class="bi bi-calendar3"></i>
+                    <span>Clases y asistencias</span>
+                  </button>
+
+                  <button
+                    class="guide-sidebar-link"
+                    type="button"
+                    data-section="calificaciones"
+                    aria-pressed="false"
+                  >
+                    <i class="bi bi-journal-check"></i>
+                    <span>Calificaciones</span>
+                  </button>
+                </nav>
+
+                <div class="guide-sidebar-help">
+                  <i class="bi bi-info-circle"></i>
+                  <p>
+                    Desde esta área podés consultar tus capacitaciones y
+                    gestionar el seguimiento académico de los estudiantes.
+                  </p>
+                </div>
+              </aside>
+
+              <!-- CONTENIDO DE LOS APARTADOS -->
+              <div class="guide-content">
+                <!-- 01. MIS CAPACITACIONES -->
+                <section class="docente-panel" data-panel="capacitaciones">
+                  <div class="manual-panel-header">
+                    <span class="manual-panel-number">01</span>
+                    <div>
+                      <span class="manual-panel-eyebrow">ÁREA DOCENTE</span>
+                      <h2>Mis capacitaciones</h2>
+                    </div>
+                  </div>
+
+                  <div class="docente-intro">
+                    <p>
+                      Al ingresar al panel docente, vas a encontrar las
+                      capacitaciones que tenés asignadas. Desde este apartado
+                      podés consultar sus datos y acceder a las herramientas de
+                      gestión académica.
+                    </p>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">1</span>
+                    <div>
+                      <h3>Consultar tus capacitaciones</h3>
+                      <p>
+                        El sistema muestra una tarjeta por cada capacitación
+                        asignada a tu usuario. En ellas podés identificar el
+                        título, la modalidad y la duración estimada en semanas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">2</span>
+                    <div>
+                      <h3>Actualizar la información</h3>
+                      <p>
+                        Si necesitás volver a consultar los datos, utilizá el
+                        botón <strong>Actualizar</strong> para cargar nuevamente
+                        las capacitaciones asignadas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">3</span>
+                    <div>
+                      <h3>Seleccionar una capacitación</h3>
+                      <p>
+                        Seleccioná la tarjeta de la capacitación que quieras
+                        administrar. Al hacerlo, se habilitarán las secciones de
+                        estudiantes, clases y calificaciones correspondientes a
+                        ese curso.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-notice">
+                    <i class="bi bi-info-circle"></i>
+                    <p>
+                      Si no tenés capacitaciones asignadas, el panel mostrará un
+                      mensaje indicándolo. Si esperabas encontrar alguna,
+                      verificá con administración que esté asignada a tu
+                      usuario.
+                    </p>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Panel de capacitaciones</h3>
+                        <p>Vista de las capacitaciones asignadas al docente.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura del panel de capacitaciones"
+                    >
+                      <img
+                        src="../assets/img/docente-capacitaciones.png"
+                        alt="Panel docente con las tarjetas de capacitaciones asignadas"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 02. GESTIÓN DE ESTUDIANTES -->
+                <section class="docente-panel" data-panel="estudiantes" hidden>
+                  <div class="manual-panel-header">
+                    <span class="manual-panel-number">02</span>
+                    <div>
+                      <span class="manual-panel-eyebrow">ÁREA DOCENTE</span>
+                      <h2>Gestión de estudiantes</h2>
+                    </div>
+                  </div>
+
+                  <div class="docente-intro">
+                    <p>
+                      Una vez seleccionada una capacitación, podés consultar a
+                      las personas inscriptas y revisar su información académica
+                      desde la pestaña <strong>Estudiantes</strong>.
+                    </p>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">1</span>
+                    <div>
+                      <h3>Consultar la lista de estudiantes</h3>
+                      <p>
+                        La tabla presenta el nombre, correo electrónico, fecha
+                        de inscripción, porcentaje de asistencia y calificación
+                        de cada estudiante.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">2</span>
+                    <div>
+                      <h3>Revisar la asistencia</h3>
+                      <p>
+                        El porcentaje se calcula a partir de los registros de
+                        asistencia disponibles para cada estudiante. Si todavía
+                        no existen registros, se indica
+                        <strong>Sin registros</strong>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">3</span>
+                    <div>
+                      <h3>Consultar la ficha académica</h3>
+                      <p>
+                        Presioná el botón <strong>Ver ficha</strong> para abrir
+                        una ventana con información del estudiante: nombre,
+                        correo electrónico, fecha de inscripción, asistencia,
+                        nota final y observaciones.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-detail-list">
+                    <div>
+                      <span class="docente-detail-label">Asistencia</span>
+                      <p>
+                        Porcentaje calculado según los registros existentes.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="docente-detail-label">Calificación</span>
+                      <p>
+                        Muestra la nota final o el estado Pendiente si todavía
+                        no fue cargada.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="docente-detail-label">Observaciones</span>
+                      <p>
+                        Incluye las observaciones registradas o indica Sin
+                        observaciones.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-notice">
+                    <i class="bi bi-info-circle"></i>
+                    <p>
+                      Si la capacitación todavía no tiene estudiantes
+                      inscriptos, se mostrará un mensaje indicando que no hay
+                      estudiantes para consultar.
+                    </p>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Listado de estudiantes</h3>
+                        <p>Información académica de las personas inscriptas.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura del listado de estudiantes"
+                    >
+                      <img
+                        src="../assets/img/docente-estudiantes.png"
+                        alt="Tabla de estudiantes inscriptos en una capacitación"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Ficha académica</h3>
+                        <p>
+                          Detalle de la información individual de un estudiante.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura de la ficha académica"
+                    >
+                      <img
+                        src="../assets/img/docente-ficha-estudiante.png"
+                        alt="Ventana con la ficha académica de un estudiante"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 03. CLASES Y ASISTENCIAS -->
+                <section class="docente-panel" data-panel="clases" hidden>
+                  <div class="manual-panel-header">
+                    <span class="manual-panel-number">03</span>
+                    <div>
+                      <span class="manual-panel-eyebrow">ÁREA DOCENTE</span>
+                      <h2>Clases y asistencias</h2>
+                    </div>
+                  </div>
+
+                  <div class="docente-intro">
+                    <p>
+                      Desde la pestaña <strong>Clases</strong> podés consultar
+                      los encuentros de la capacitación, modificar determinados
+                      datos y registrar la asistencia de los estudiantes.
+                    </p>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">1</span>
+                    <div>
+                      <h3>Consultar los encuentros</h3>
+                      <p>
+                        Cada clase muestra su fecha, horario de inicio y
+                        finalización, estado, tema y docente responsable.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">2</span>
+                    <div>
+                      <h3>Editar los datos de una clase</h3>
+                      <p>
+                        Utilizá el botón <strong>Editar clase</strong> para
+                        abrir la ventana de administración del encuentro. Allí
+                        podés modificar el docente responsable, el tema y el
+                        estado de la clase.
+                      </p>
+                      <p>Los estados disponibles son:</p>
+                      <ul class="docente-status-list">
+                        <li>
+                          <span
+                            class="docente-status-dot docente-status-scheduled"
+                          ></span>
+                          Programada
+                        </li>
+                        <li>
+                          <span
+                            class="docente-status-dot docente-status-completed"
+                          ></span>
+                          Realizada
+                        </li>
+                        <li>
+                          <span
+                            class="docente-status-dot docente-status-cancelled"
+                          ></span>
+                          Cancelada
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">3</span>
+                    <div>
+                      <h3>Registrar o modificar asistencias</h3>
+                      <p>
+                        En las clases que no estén canceladas, seleccioná
+                        <strong>Tomar asistencia</strong> o
+                        <strong>Ver / modificar asistencia</strong>, según
+                        corresponda.
+                      </p>
+                      <p>
+                        En la ventana de asistencia vas a encontrar los datos
+                        del encuentro y el listado de estudiantes. Para cada
+                        persona podés seleccionar uno de estos estados:
+                      </p>
+                      <ul class="docente-attendance-list">
+                        <li>
+                          <span
+                            class="docente-attendance-tag docente-attendance-present"
+                            >Presente</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            class="docente-attendance-tag docente-attendance-absent"
+                            >Ausente</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            class="docente-attendance-tag docente-attendance-justified"
+                            >Justificado</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="docente-notice">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <p>
+                      Las clases con fecha futura aparecen bloqueadas hasta el
+                      día indicado por el sistema. No es posible editar sus
+                      datos ni registrar asistencia antes de esa fecha. Tampoco
+                      se puede tomar asistencia en clases canceladas.
+                    </p>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Listado de clases</h3>
+                        <p>
+                          Encuentros programados para la capacitación
+                          seleccionada.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura del listado de clases"
+                    >
+                      <img
+                        src="../assets/img/docente-clases.png"
+                        alt="Listado de clases con fechas, horarios, temas y estados"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Registro de asistencia</h3>
+                        <p>
+                          Selección del estado de asistencia de cada estudiante.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura del registro de asistencia"
+                    >
+                      <img
+                        src="../assets/img/docente-asistencia.png"
+                        alt="Formulario para registrar la asistencia de los estudiantes"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="docente-notice docente-notice-secondary">
+                    <i class="bi bi-info-circle"></i>
+                    <p>
+                      Al guardar la asistencia, si un estudiante no tenía un
+                      registro previo y no seleccionaste un estado, el sistema
+                      lo registra como <strong>Ausente</strong>. Si ya existía
+                      un registro, se conserva el estado seleccionado
+                      anteriormente.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- 04. CALIFICACIONES -->
+                <section
+                  class="docente-panel"
+                  data-panel="calificaciones"
+                  hidden
+                >
+                  <div class="manual-panel-header">
+                    <span class="manual-panel-number">04</span>
+                    <div>
+                      <span class="manual-panel-eyebrow">ÁREA DOCENTE</span>
+                      <h2>Calificaciones</h2>
+                    </div>
+                  </div>
+
+                  <div class="docente-intro">
+                    <p>
+                      La pestaña <strong>Calificaciones</strong> permite cargar
+                      y modificar la nota final de los estudiantes de la
+                      capacitación seleccionada, junto con las observaciones
+                      correspondientes.
+                    </p>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">1</span>
+                    <div>
+                      <h3>Consultar las calificaciones</h3>
+                      <p>
+                        El listado muestra a los estudiantes y su situación
+                        académica. Si todavía no tienen una calificación
+                        registrada, aparece el estado
+                        <strong>Pendiente</strong> junto al botón
+                        <strong>Calificar</strong>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">2</span>
+                    <div>
+                      <h3>Cargar una calificación</h3>
+                      <p>
+                        Seleccioná <strong>Calificar</strong> para abrir el
+                        formulario. Ingresá una nota numérica entre 1 y 10 y, si
+                        corresponde, agregá observaciones.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-step">
+                    <span class="docente-step-number">3</span>
+                    <div>
+                      <h3>Modificar una calificación</h3>
+                      <p>
+                        Si el estudiante ya tiene una nota registrada,
+                        seleccioná <strong>Editar</strong>. Podés actualizar el
+                        valor de la calificación y sus observaciones.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-detail-list">
+                    <div>
+                      <span class="docente-detail-label">Nota</span>
+                      <p>
+                        Debe ser un número comprendido entre 1 y 10. Se admiten
+                        valores decimales.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="docente-detail-label">Observaciones</span>
+                      <p>
+                        Campo de texto libre para agregar comentarios sobre el
+                        desempeño académico.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="docente-notice">
+                    <i class="bi bi-info-circle"></i>
+                    <p>
+                      Una vez guardada la calificación, el listado se actualiza
+                      para mostrar la información registrada.
+                    </p>
+                  </div>
+
+                  <div class="manual-screenshot-section">
+                    <div class="manual-screenshot-heading">
+                      <div>
+                        <h3>Listado de calificaciones</h3>
+                        <p>Notas y observaciones de los estudiantes.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="manual-page-viewer"
+                      tabindex="0"
+                      aria-label="Captura del listado de calificaciones"
+                    >
+                      <img
+                        src="../assets/img/docente-calificaciones.png"
+                        alt="Tabla de calificaciones con notas y observaciones"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- PIE DE PÁGINA -->
+      <footer class="docs-footer">
+        <div class="docs-container docs-footer-inner">
+          <a
+            href="../../index.html"
+            class="docs-footer-brand"
+            aria-label="Inicio"
+          >
+            <img
+              src="../../assets/img/iconos/icon.png"
+              alt="Asociación Civil Canales"
+            />
+          </a>
+          <span>IFTS 4 • Práctica Profesional IV • 2026</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- INTERACCIÓN DEL MENÚ -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sidebarButtons = document.querySelectorAll(".guide-sidebar-link");
+        const contentPanels = document.querySelectorAll(".docente-panel");
+
+        function showSection(sectionName) {
+          sidebarButtons.forEach((button) => {
+            const isActive = button.dataset.section === sectionName;
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+          });
+
+          contentPanels.forEach((panel) => {
+            panel.hidden = panel.dataset.panel !== sectionName;
+          });
+        }
+
+        sidebarButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            showSection(button.dataset.section);
+          });
+        });
+
+        showSection("capacitaciones");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+
+/* ——— PÁGINA CÓMO COLABORAR ——— */
+
+.colaborar-hero {
+    padding: 35px 0 55px;
+    background: var(--color-background-soft);
+}
+
+.colaborar-hero .project-breadcrumb {
+    margin-bottom: 30px;
+}
+
+.colaborar-intro {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.colaborar-intro-content h1 {
+    margin: 14px 0 18px;
+    color: var(--color-text);
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 750;
+    line-height: 1.15;
+}
+
+.colaborar-intro-content p {
+    max-width: 760px;
+    color: var(--color-text-secondary);
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.colaborar-intro-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 220px;
+    padding: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    background: var(--color-white);
+    text-align: center;
+}
+
+.colaborar-intro-icon {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-background-soft);
+    color: var(--color-primary);
+    font-size: 2.8rem;
+}
+
+.colaborar-intro-visual span {
+    max-width: 220px;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ——— DISTRIBUCIÓN PRINCIPAL ——— */
+
+.colaborar-section {
+    padding: 55px 0 75px;
+}
+
+.colaborar-layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    align-items: start;
+    gap: 35px;
+}
+
+
+/* ——— PANELES DE CONTENIDO ——— */
+
+.colaborar-content {
+    min-width: 0;
+    padding: 32px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    background: var(--color-white);
+}
+
+.colaborar-panel[hidden] {
+    display: none !important;
+}
+
+/* ——— BLOQUES INFORMATIVOS ——— */
+
+.colaborar-info-block,
+.colaborar-detail-block {
+    margin-bottom: 28px;
+}
+
+.colaborar-info-block {
+    padding: 22px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-background-soft);
+}
+
+.colaborar-info-block h3,
+.colaborar-detail-block h3 {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.colaborar-info-block p,
+.colaborar-detail-block p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.94rem;
+    line-height: 1.75;
+}
+
+/* ——— PASOS PARA DONAR ——— */
+
+.colaborar-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 18px 0 0;
+    padding-left: 22px;
+}
+
+.colaborar-steps li {
+    padding-left: 5px;
+    color: var(--color-text-secondary);
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+.colaborar-steps li::marker {
+    color: var(--color-primary);
+    font-weight: 750;
+}
+
+.colaborar-steps strong {
+    color: var(--color-text);
+}
+
+/* ——— MONTOS SUGERIDOS ——— */
+
+.colaborar-amounts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.colaborar-amounts span {
+    padding: 13px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-background-soft);
+    color: var(--color-primary-dark);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ——— DATOS BANCARIOS ——— */
+
+.colaborar-bank-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 18px;
+    padding: 5px 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-white);
+}
+
+.colaborar-bank-data > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 0;
+}
+
+.colaborar-bank-data > div + div {
+    border-top: 1px solid var(--color-border);
+}
+
+.colaborar-bank-data span {
+    color: var(--color-text-secondary);
+    font-size: 0.82rem;
+}
+
+.colaborar-bank-data strong {
+    color: var(--color-text);
+    font-size: 0.96rem;
+    overflow-wrap: anywhere;
+}
+
+.colaborar-bank-data .colaborar-bank-value {
+    font-family: monospace;
+    letter-spacing: 0.02em;
+}
+
+.colaborar-bank-data .colaborar-bank-alias {
+    color: var(--color-primary);
+}
+
+/* ——— OTRAS FORMAS DE PARTICIPAR ——— */
+
+.colaborar-participation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.colaborar-participation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-background-soft);
+}
+
+.colaborar-participation-icon {
+    display: grid;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 1.25rem;
+}
+
+.colaborar-participation-item h3 {
+    margin: 0 0 7px;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.colaborar-participation-item p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+/* ——— ESTADOS DE PAGO ——— */
+
+.colaborar-status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 28px;
+}
+
+.colaborar-status-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-background-soft);
+}
+
+.colaborar-status-icon {
+    display: grid;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-white);
+    font-size: 1.15rem;
+}
+
+.status-approved .colaborar-status-icon {
+    color: #25834b;
+}
+
+.status-pending .colaborar-status-icon {
+    color: #b77b16;
+}
+
+.status-failed .colaborar-status-icon {
+    color: #bd4242;
+}
+
+.colaborar-status-item h3 {
+    margin: 0 0 6px;
+    color: var(--color-text);
+    font-size: 0.98rem;
+    font-weight: 700;
+}
+
+.colaborar-status-item p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+/* ——— RESPONSIVE ——— */
+
+@media (max-width: 900px) {
+    .colaborar-intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .colaborar-intro-visual {
+        min-height: 170px;
+    }
+
+    .colaborar-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .colaborar-sidebar {
+        position: static;
+    }
+
+    .colaborar-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .colaborar-sidebar-note {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .colaborar-hero {
+        padding: 25px 0 35px;
+    }
+
+    .colaborar-intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .colaborar-section {
+        padding: 35px 0 50px;
+    }
+
+    .colaborar-content {
+        padding: 20px 16px;
+    }
+
+    .colaborar-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .colaborar-menu-item {
+        padding: 12px 10px;
+    }
+
+    .colaborar-amounts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .colaborar-info-block {
+        padding: 17px;
+    }
+
+    .colaborar-participation-item {
+        padding: 15px;
+    }
+
+    .colaborar-status-item {
+        padding: 15px;
+    }
+
+    .colaborar-intro-visual {
+        min-height: 150px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .colaborar-menu-item {
+        transition: none;
+    }
+}

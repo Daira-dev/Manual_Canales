@@ -1,0 +1,477 @@
+
+/* INTRODUCCIÓN DE LOS PANELES */
+
+.admin-intro {
+  margin: 0 0 26px;
+  color: var(--color-text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+/* BLOQUES INFORMATIVOS */
+
+.admin-info-block {
+  margin-bottom: 24px;
+  padding: 24px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.admin-info-block h3 {
+  margin: 0 0 12px;
+  color: var(--color-text);
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.admin-info-block p {
+  margin: 0 0 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+.admin-info-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* TARJETAS DE FUNCIONALIDADES */
+
+.admin-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-feature-card {
+  min-width: 0;
+  padding: 22px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-orange);
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.06);
+}
+
+.admin-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+  background: var(--color-background-light);
+  border-radius: var(--radius-small);
+  font-size: 1.25rem;
+}
+
+.admin-feature-card h3 {
+  margin: 0 0 8px;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.admin-feature-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+/* LISTA DE DETALLES */
+
+.admin-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.admin-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.admin-detail-item > i {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--color-primary);
+  background: var(--color-background-light);
+  border-radius: var(--radius-small);
+  font-size: 1.1rem;
+}
+
+.admin-detail-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-text);
+  font-size: 0.96rem;
+}
+
+.admin-detail-item p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+/* LISTAS DE ESTADOS */
+
+.admin-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.admin-status-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.admin-status-dot {
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.admin-status-item strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.admin-status-item p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.admin-status-draft {
+  background: var(--color-text-muted);
+}
+
+.admin-status-published,
+.admin-status-confirmed,
+.admin-status-approved {
+  background: #269b68;
+}
+
+.admin-status-hidden,
+.admin-status-cancelled,
+.admin-status-rejected {
+  background: #d45a5a;
+}
+
+.admin-status-review,
+.admin-status-pending {
+  background: #d99a2b;
+}
+
+.admin-status-active {
+  background: #4285b9;
+}
+
+/* TARJETAS DE RESUMEN */
+
+.admin-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-summary-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.admin-summary-card > i {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+  background: var(--color-background-light);
+  border-radius: var(--radius-small);
+  font-size: 1.2rem;
+}
+
+.admin-summary-card strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.admin-summary-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* AVISOS */
+
+.admin-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  min-width: 0;
+  margin: 22px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.admin-notice > i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 1.15rem;
+}
+
+.admin-notice p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.admin-notice-info {
+  color: var(--color-text-secondary);
+  background: var(--color-background-light);
+  border-color: var(--color-border-orange);
+}
+
+.admin-notice-warning {
+  color: #805b20;
+  background: #fff8e9;
+  border-color: #f1dfb9;
+}
+
+/* MÓDULOS EN CONSTRUCCIÓN */
+
+.admin-construction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  margin-bottom: 24px;
+  padding: 42px 30px;
+  text-align: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+}
+
+.admin-construction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 20px;
+  color: var(--color-primary-dark);
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border-orange);
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+/* ETIQUETA DE MÓDULO EN CONSTRUCCIÓN */
+
+.admin-construction-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+  color: var(--color-primary-dark);
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border-orange);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ESTADO EN EL MENÚ LATERAL */
+
+.admin-sidebar-status {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  padding: 0;
+  color: var(--color-primary-dark);
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border-orange);
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+/* PANELES */
+
+.admin-panel {
+  min-width: 0;
+}
+
+.admin-panel[hidden] {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .admin-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-info-block {
+    padding: 20px;
+  }
+
+  .admin-feature-card {
+    padding: 20px;
+  }
+
+  .admin-construction-card {
+    padding: 32px 22px;
+  }
+
+  .admin-construction-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 1.55rem;
+  }
+
+  .admin-construction-label {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+  }
+
+  .admin-sidebar-status {
+    width: 23px;
+    height: 23px;
+    font-size: 0.68rem;
+  }
+
+  .admin-notice {
+    padding: 16px;
+  }
+
+  .admin-construction-label {
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .admin-sidebar-status {
+    width: 23px;
+    height: 23px;
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-intro {
+    font-size: 0.96rem;
+  }
+
+  .admin-info-block {
+    padding: 17px;
+  }
+
+  .admin-feature-card {
+    padding: 18px;
+  }
+
+  .admin-summary-card {
+    padding: 16px;
+  }
+
+  .admin-detail-item {
+    gap: 11px;
+  }
+
+  .admin-detail-item > i {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .admin-construction-card {
+    padding: 26px 17px;
+  }
+
+  .admin-construction-card h3 {
+    font-size: 1.12rem;
+  }
+
+  .admin-construction-card p {
+    font-size: 0.92rem;
+  }
+
+  .admin-notice {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .admin-notice p {
+    font-size: 0.9rem;
+  }
+}
+
+/* REDUCCIÓN DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-feature-card {
+    transition: none;
+  }
+
+  .admin-feature-card:hover {
+    transform: none;
+  }
+}

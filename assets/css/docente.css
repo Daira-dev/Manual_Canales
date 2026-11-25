@@ -1,0 +1,269 @@
+/* ——— INTRODUCCIÓN DEL ÁREA DOCENTE ——— */
+
+.docente-intro {
+  margin-bottom: 30px;
+}
+
+.docente-intro p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ——— PASOS DE CADA APARTADO ——— */
+
+.docente-step {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.docente-step-number {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border-orange);
+  border-radius: var(--radius-medium);
+  background: var(--color-background-light);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.docente-step h3 {
+  margin: 3px 0 8px;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.docente-step p {
+  margin-bottom: 10px;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.docente-step p:last-child {
+  margin-bottom: 0;
+}
+
+.docente-step ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.9;
+}
+
+
+/* ——— BLOQUES DE INFORMACIÓN ——— */
+
+.docente-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin: 28px 0;
+  padding: 17px 18px;
+  border: 1px solid var(--color-border-orange);
+  border-radius: var(--radius-medium);
+  background: var(--color-background-light);
+}
+
+.docente-notice > i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.docente-notice p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.87rem;
+  line-height: 1.7;
+}
+
+.docente-notice-secondary {
+  border-color: var(--color-border);
+  background: var(--color-background-soft);
+}
+
+.docente-notice-secondary > i {
+  color: var(--color-text-muted);
+}
+
+
+/* ——— DETALLE DE INFORMACIÓN ACADÉMICA ——— */
+
+.docente-detail-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin: 25px 0;
+}
+
+.docente-detail-list > div {
+  padding: 17px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-white);
+}
+
+.docente-detail-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-primary-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.docente-detail-list p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.83rem;
+  line-height: 1.65;
+}
+
+
+/* ——— ESTADOS DE LAS CLASES ——— */
+
+.docente-status-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.docente-status-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.docente-status-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.docente-status-scheduled {
+  background: var(--color-primary);
+}
+
+.docente-status-completed {
+  background: var(--color-text-muted);
+}
+
+.docente-status-cancelled {
+  background: var(--color-border);
+  border: 1px solid var(--color-text-muted);
+}
+
+
+/* ——— ESTADOS DE ASISTENCIA ——— */
+
+.docente-attendance-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.docente-attendance-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 13px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.docente-attendance-present {
+  border-color: var(--color-border-orange);
+  background: var(--color-background-light);
+  color: var(--color-primary-dark);
+}
+
+.docente-attendance-absent {
+  background: var(--color-background-soft);
+  color: var(--color-text-secondary);
+}
+
+.docente-attendance-justified {
+  background: var(--color-white);
+  color: var(--color-text-muted);
+}
+
+
+/* ——— PANELES Y CAPTURAS ——— */
+
+.docente-panel[hidden] {
+  display: none;
+}
+
+.docente-panel .manual-screenshot-section {
+  margin-top: 35px;
+}
+
+.docente-panel .manual-screenshot-section + .manual-screenshot-section {
+  margin-top: 30px;
+}
+
+
+/* ——— RESPONSIVE ——— */
+
+@media (max-width: 900px) {
+  .docente-detail-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .docente-breadcrumb-section {
+    padding-top: 12px;
+  }
+
+  .docente-step {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .docente-step-number {
+    width: 32px;
+    height: 32px;
+  }
+
+  .docente-step h3 {
+    font-size: 0.98rem;
+  }
+
+  .docente-step p {
+    font-size: 0.86rem;
+  }
+
+  .docente-notice {
+    padding: 14px;
+  }
+
+  .docente-status-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .docente-attendance-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
