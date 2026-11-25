@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manual técnico del sistema CANALES: arquitectura, tecnologías, estructura y funcionamiento."
+    />
+    <title>Manual Técnico | CANALES</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/iconos/icon.png" />
+
+    <link rel="stylesheet" href="../assets/css/estilos-globales.css" />
+    <link rel="stylesheet" href="../assets/css/componentes.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/documentacion-proyecto.css" />
+    <link rel="stylesheet" href="../assets/css/primeros-pasos.css" />
+    <link rel="stylesheet" href="../assets/css/manual-tecnico.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <header class="docs-header">
+      <div class="docs-container docs-navbar">
+        <a class="docs-brand" href="../index.html" aria-label="Inicio">
+          <img
+            src="../assets/img/logo-canales.png"
+            alt="Asociación Civil Canales"
+          />
+        </a>
+
+        <nav class="docs-nav" aria-label="Navegación principal">
+          <a href="../index.html" class="docs-nav-link">Inicio</a>
+
+          <a href="../manual-usuario/index.html" class="docs-nav-link">
+            Manual de Usuario
+          </a>
+
+          <a
+            href="../documentacion-proyecto/index.html"
+            class="docs-nav-link"
+          >
+            Documentación
+          </a>
+
+          <a
+            href="index.html"
+            class="docs-nav-link active"
+            aria-current="page"
+          >
+            Manual Técnico
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="project-hero">
+        <div class="docs-container">
+          <nav class="project-breadcrumb" aria-label="Ruta de navegación">
+            <a href="../index.html">Inicio</a>
+            <i class="bi bi-chevron-right"></i>
+            <span aria-current="page">Manual Técnico</span>
+          </nav>
+
+          <div class="project-hero-content">
+            <div class="project-hero-text">
+              <span class="docs-eyebrow">Proyecto CANALES · PP4</span>
+
+              <h1>Manual Técnico</h1>
+
+              <p>
+                En esta sección se documentan los aspectos técnicos de la
+                plataforma CANALES: su arquitectura, tecnologías, estructura
+                interna y principales componentes de desarrollo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENIDO -->
+      <section class="technical-manual">
+        <div class="docs-container">
+
+          <!-- INTRODUCCIÓN -->
+          <div class="technical-intro">
+            <span class="docs-eyebrow">DOCUMENTACIÓN TÉCNICA</span>
+            <h2>Conocé cómo está construido CANALES</h2>
+            <p>
+              Este manual está dirigido a desarrolladores y personas
+              responsables del mantenimiento y evolución del sistema.
+              Reúne información de referencia sobre los componentes que
+              intervienen en su funcionamiento.
+            </p>
+          </div>
+
+          <!-- ÍNDICE -->
+          <nav class="technical-index" aria-label="Contenido del manual técnico">
+            <a href="#descripcion">
+              <i class="bi bi-info-circle"></i>
+              <span>Descripción general</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a href="#arquitectura">
+              <i class="bi bi-diagram-3"></i>
+              <span>Arquitectura y tecnologías</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a href="#estructura">
+              <i class="bi bi-folder2-open"></i>
+              <span>Estructura del proyecto</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a href="#backend">
+              <i class="bi bi-server"></i>
+              <span>Backend y API</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a href="#frontend">
+              <i class="bi bi-window"></i>
+              <span>Frontend</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a href="#datos-seguridad">
+              <i class="bi bi-database"></i>
+              <span>Datos y seguridad</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </a>
+          </nav>
+
+          <!-- 01. DESCRIPCIÓN GENERAL -->
+          <section class="technical-section" id="descripcion">
+            <div class="technical-section-header">
+              <span class="technical-number">01</span>
+              <div>
+                <span class="technical-eyebrow">INTRODUCCIÓN</span>
+                <h2>Descripción general</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                CANALES es una plataforma web desarrollada para centralizar
+                información institucional y ofrecer herramientas de gestión
+                para la Asociación Civil Canales.
+              </p>
+
+              <p>
+                El sistema contempla distintos perfiles de usuario y módulos
+                destinados a la administración de contenidos, capacitaciones,
+                inscripciones, materiales educativos y donaciones.
+              </p>
+
+              <p>
+                Su desarrollo utiliza una arquitectura modular que permite
+                separar responsabilidades, organizar las funcionalidades
+                y facilitar el mantenimiento de la aplicación.
+              </p>
+            </div>
+          </section>
+
+          <!-- 02. ARQUITECTURA -->
+          <section class="technical-section" id="arquitectura">
+            <div class="technical-section-header">
+              <span class="technical-number">02</span>
+              <div>
+                <span class="technical-eyebrow">TECNOLOGÍAS</span>
+                <h2>Arquitectura y tecnologías</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                La plataforma utiliza una arquitectura cliente-servidor,
+                separando la interfaz de usuario de la lógica de negocio y
+                el acceso a los datos.
+              </p>
+
+              <div class="technical-tech-grid">
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <h3>Laravel</h3>
+                  <p>
+                    Framework utilizado para desarrollar el backend,
+                    gestionar las rutas, procesar solicitudes y organizar
+                    la lógica de negocio.
+                  </p>
+                  <span>Backend</span>
+                </article>
+
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-filetype-php"></i>
+                  </div>
+                  <h3>PHP</h3>
+                  <p>
+                    Lenguaje de programación utilizado para implementar
+                    los servicios y funcionalidades del servidor.
+                  </p>
+                  <span>Lenguaje de servidor</span>
+                </article>
+
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-braces"></i>
+                  </div>
+                  <h3>React</h3>
+                  <p>
+                    Biblioteca utilizada para construir la interfaz
+                    mediante componentes reutilizables.
+                  </p>
+                  <span>Frontend</span>
+                </article>
+
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                  </div>
+                  <h3>Vite</h3>
+                  <p>
+                    Herramienta utilizada para ejecutar el entorno local
+                    y compilar los recursos del frontend.
+                  </p>
+                  <span>Desarrollo y compilación</span>
+                </article>
+
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-database"></i>
+                  </div>
+                  <h3>SQLite</h3>
+                  <p>
+                    Motor de base de datos utilizado en la configuración
+                    de desarrollo conocida del proyecto.
+                  </p>
+                  <span>Base de datos</span>
+                </article>
+
+                <article class="technical-tech-card">
+                  <div class="technical-tech-icon">
+                    <i class="bi bi-git"></i>
+                  </div>
+                  <h3>Git y GitHub</h3>
+                  <p>
+                    Herramientas utilizadas para el control de versiones,
+                    la colaboración y la integración del código.
+                  </p>
+                  <span>Control de versiones</span>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03. ESTRUCTURA -->
+          <section class="technical-section" id="estructura">
+            <div class="technical-section-header">
+              <span class="technical-number">03</span>
+              <div>
+                <span class="technical-eyebrow">ORGANIZACIÓN</span>
+                <h2>Estructura del proyecto</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                El proyecto organiza sus componentes en directorios
+                diferenciados para separar las responsabilidades del
+                servidor, la interfaz y los recursos compartidos.
+              </p>
+
+              <div class="technical-structure">
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>app/</strong>
+                  <span>Controladores, modelos y lógica de aplicación.</span>
+                </div>
+
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>routes/</strong>
+                  <span>Definición de rutas web y endpoints de la API.</span>
+                </div>
+
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>database/</strong>
+                  <span>Migraciones, seeders y archivos de base de datos.</span>
+                </div>
+
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>frontend-react/</strong>
+                  <span>Aplicación React, componentes, páginas y servicios.</span>
+                </div>
+
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>resources/</strong>
+                  <span>Recursos y vistas del backend.</span>
+                </div>
+
+                <div class="technical-folder">
+                  <i class="bi bi-folder-fill"></i>
+                  <strong>public/</strong>
+                  <span>Archivos públicos y recursos accesibles de la aplicación.</span>
+                </div>
+              </div>
+
+              <p class="technical-note">
+                La estructura representa los directorios principales
+                conocidos del proyecto. La ubicación de algunos módulos
+                puede variar según su organización interna.
+              </p>
+            </div>
+          </section>
+
+          <!-- 04. BACKEND -->
+          <section class="technical-section" id="backend">
+            <div class="technical-section-header">
+              <span class="technical-number">04</span>
+              <div>
+                <span class="technical-eyebrow">SERVIDOR</span>
+                <h2>Backend y API</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                El backend está desarrollado con Laravel y proporciona
+                los servicios que permiten al frontend consultar,
+                registrar, modificar y administrar la información.
+              </p>
+
+              <h3>Responsabilidades principales</h3>
+
+              <ul class="technical-list">
+                <li>Procesamiento de solicitudes HTTP.</li>
+                <li>Validación de los datos recibidos.</li>
+                <li>Aplicación de reglas de negocio.</li>
+                <li>Administración de usuarios, roles y permisos.</li>
+                <li>Acceso y persistencia de información.</li>
+                <li>Comunicación con servicios externos.</li>
+              </ul>
+
+              <div class="technical-info-card">
+                <i class="bi bi-arrow-left-right"></i>
+                <div>
+                  <h3>Comunicación mediante API</h3>
+                  <p>
+                    El frontend realiza solicitudes HTTP a los endpoints
+                    del backend. Laravel procesa cada solicitud y devuelve
+                    respuestas que permiten actualizar la información
+                    presentada en la interfaz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 05. FRONTEND -->
+          <section class="technical-section" id="frontend">
+            <div class="technical-section-header">
+              <span class="technical-number">05</span>
+              <div>
+                <span class="technical-eyebrow">INTERFAZ</span>
+                <h2>Frontend</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                La interfaz está desarrollada con React y organizada
+                mediante páginas y componentes reutilizables que
+                representan las distintas áreas funcionales del sistema.
+              </p>
+
+              <h3>Características principales</h3>
+
+              <ul class="technical-list">
+                <li>Organización de la interfaz mediante componentes.</li>
+                <li>Navegación entre páginas y módulos.</li>
+                <li>Gestión de estados e interacción con el usuario.</li>
+                <li>Consumo de los servicios proporcionados por la API.</li>
+                <li>Centralización de solicitudes HTTP mediante servicios.</li>
+              </ul>
+
+              <div class="technical-info-card">
+                <i class="bi bi-gear"></i>
+                <div>
+                  <h3>Entorno de desarrollo</h3>
+                  <p>
+                    Vite permite ejecutar el frontend durante el desarrollo
+                    y generar los archivos compilados necesarios para
+                    su publicación.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 06. DATOS Y SEGURIDAD -->
+          <section class="technical-section" id="datos-seguridad">
+            <div class="technical-section-header">
+              <span class="technical-number">06</span>
+              <div>
+                <span class="technical-eyebrow">DATOS Y SEGURIDAD</span>
+                <h2>Base de datos y autenticación</h2>
+              </div>
+            </div>
+
+            <div class="technical-section-body">
+              <p>
+                La persistencia de información se gestiona mediante
+                modelos y migraciones de Laravel, que permiten definir
+                las entidades, sus atributos y las relaciones entre ellas.
+              </p>
+
+              <h3>Principales áreas de información</h3>
+
+              <ul class="technical-list">
+                <li>Usuarios y perfiles.</li>
+                <li>Roles y permisos.</li>
+                <li>Publicaciones y contenidos institucionales.</li>
+                <li>Capacitaciones e inscripciones.</li>
+                <li>Materiales educativos.</li>
+                <li>Donaciones y pagos.</li>
+              </ul>
+
+              <h3>Autenticación y autorización</h3>
+
+              <p>
+                El sistema utiliza Laravel Sanctum para la autenticación
+                y Spatie Laravel Permission para administrar roles
+                y permisos.
+              </p>
+
+              <div class="technical-role-grid">
+                <span><i class="bi bi-shield-lock"></i> Administrador</span>
+                <span><i class="bi bi-person-workspace"></i> Docente</span>
+                <span><i class="bi bi-mortarboard"></i> Estudiante</span>
+                <span><i class="bi bi-person"></i> Visitante</span>
+              </div>
+
+              <div class="technical-info-card">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h3>Control de acceso</h3>
+                  <p>
+                    Los roles y permisos permiten restringir las
+                    funcionalidades según las responsabilidades
+                    asignadas a cada perfil de usuario.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CIERRE -->
+          <div class="technical-closing">
+            <i class="bi bi-journal-code"></i>
+            <div>
+              <h2>Documentación técnica de CANALES</h2>
+              <p>
+                Esta sección funciona como referencia general de la
+                arquitectura y los componentes del sistema. Los detalles
+                específicos de implementación pueden ampliarse a medida
+                que evolucione el proyecto.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="docs-footer">
+      <div class="docs-container docs-footer-inner">
+        <a href="../index.html" class="docs-footer-brand" aria-label="Inicio">
+          <img
+            src="../assets/img/iconos/icon.png"
+            alt="Asociación Civil Canales"
+          />
+        </a>
+
+        <span>IFTS 4 • Práctica Profesional IV • 2026</span>
+      </div>
+    </footer>
+  </body>
+</html>
